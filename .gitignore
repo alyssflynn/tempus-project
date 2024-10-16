@@ -2,7 +2,6 @@
 .venv
 .vscode
 .pytest_cache
-# .gitignore
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -27,3 +26,6 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+
+# Jupyter
+.ipynb_checkpoints/

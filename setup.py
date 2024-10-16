@@ -21,6 +21,7 @@ setup(
         "varanno": ["*.txt"],
         "varanno.data": ["*"],
     },
+    python_requires=">=3.10",
     install_requires=[
         "biopython==1.84",
         "numpy==2.1.2",
