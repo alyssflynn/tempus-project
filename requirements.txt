@@ -1,3 +1,4 @@
 pandas
 numpy
 biopython
+jupyter
