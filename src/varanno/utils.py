@@ -61,19 +61,3 @@ def parse_format_sample(formatstr:str, samplestr:str):
         formatstr.split(":"),
         samplestr.split(":")
     ))
-
-
-def parse_genotype(gtstr: str):
-    """Evaluates the genotype of the sample.
-
-    - 0/0 : the sample is homozygous reference
-    - 0/1 : the sample is heterozygous, carrying 1 copy of each of the REF and ALT alleles
-    - 1/1 : the sample is homozygous alternate
-
-    Source: https://gatk.broadinstitute.org/hc/en-us/articles/360035531692-VCF-Variant-Call-Format
-    """
-    return {
-        "0/0": "homozygous_ref",
-        "0/1": "heterozygous",
-        "1/1": "homozygous_alt"
-    }.get(gtstr)
