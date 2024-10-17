@@ -1,0 +1,3 @@
+Annotating VCF! data/test_vcf_data.txt -> data/sample_output3
+Generating record annotations -> data/sample_output3/annotations.csv
+Writing metadata JSON -> data/sample_output3/metadata.json

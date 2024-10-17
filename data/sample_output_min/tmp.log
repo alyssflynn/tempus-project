@@ -1,3 +1,0 @@
-Annotating VCF! data/test_vcf_min.txt -> data/sample_output_min
-Generating record annotations -> data/sample_output_min/annotations.csv
-Writing metadata JSON -> data/sample_output_min/metadata.json

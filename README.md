@@ -2,6 +2,8 @@
 
 Varanno is a prototype variant annotation tool written in python. This was developed for a take home interview project with Tempus AI. 
 
+A CSV containing variant annotations for the provided VCF file is located [here](/annotation_results/annotations.csv).
+
 [See project notes below!](#notes)
 
 ## Getting started
@@ -20,10 +22,12 @@ $ python -m pip install --upgrade pip
 $ python -m pip install -e .'[dev]'
 ```
 
-### Run tests
+### Running tests
 
-Run tests with 
-`$ pytest`
+This project uses pytest. Use this command to run all varanno tests:
+```
+$ pytest
+```
 
 ## Usage
 
