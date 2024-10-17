@@ -6,10 +6,30 @@ Varanno is a prototype variant annotation tool written in python. This was devel
 
 Clone the project and cd into the project directory.
 
-Run `$ source .build_dev.sh` to set up the dev environment. This will create a virtual environment and install requirements. 
+Create and activate a virtual environment:
+```
+$ python3 -m venv .venv
+$ source .venv/bin/activate
+```
 
-Update dependencies by running the `.update_deps.sh` script.
+Install project requirements:
+```
+$ python -m pip install --upgrade pip
+$ python -m pip install -e .'[dev]'
+```
+
+### Run tests
+
+Run tests with 
+`$ pytest`
 
 ## Usage
 
-Todo!
+### Run from console
+
+You can run varanno from the command line, specifying an input VCF file and output directory for the annotation data and metadata files:
+
+`$ python -m varanno -f "{vcf_input_file}" -o "{output_directory}"`
+
+Or run from an interactive console to inspect the data dynamically. 
+
