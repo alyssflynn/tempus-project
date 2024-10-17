@@ -68,6 +68,7 @@ class Reader:
                 except ReaderError as err:
                     log.warning(err)
                     self.errors.append(err)
+                    raise err
     
     def load_records(self):
         self.records = list(self.read())
