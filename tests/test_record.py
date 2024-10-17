@@ -54,6 +54,11 @@ def variant_annotation():
 def test_annotation_factory(record, vep_hgvs_response_data):
     result = annotation_factory(record, vep_hgvs_response_data)
     assert result == VariantAnnotation(
+        CHROM="5",
+        POS="33954511",
+        ID=".",
+        REF="T",
+        ALT="C",
         gene_id='ENSG00000135744',
         allele_string='T/C',
         variant_type='SNV_SUB',
@@ -73,6 +78,11 @@ def test_annotate_batch(record):
     results = list(annotate_batch(records))
     assert results == [
         VariantAnnotation(
+            CHROM="5",
+            POS="33954511",
+            ID=".",
+            REF="T",
+            ALT="C",
             gene_id='ENSG00000164175',
             allele_string='T/C',
             variant_type='SNV_SUB',
@@ -84,6 +94,11 @@ def test_annotate_batch(record):
             genotype='homozygous_alt',
         ),
         VariantAnnotation(
+            CHROM="5",
+            POS="33954511",
+            ID=".",
+            REF="T",
+            ALT="C",
             gene_id='ENSG00000164175',
             allele_string='T/C',
             variant_type='SNV_SUB',

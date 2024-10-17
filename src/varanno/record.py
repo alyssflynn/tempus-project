@@ -43,6 +43,11 @@ def pct_reads_supporting_variant(n_reads_supporting_variant: float, total_covera
 
 @dataclass(slots=True)
 class VariantAnnotation:
+    CHROM: str
+    POS: int
+    ID: str 
+    REF: str
+    ALT: str
     gene_id: str
     allele_string: str
     variant_type: str
@@ -88,6 +93,11 @@ def annotation_factory(record: Record, vep_data: dict = None):
     maf = find_vep_maf(vep_data, record.ALT)
 
     return VariantAnnotation(
+        CHROM=record.CHROM,
+        POS=record.POS,
+        ID=record.ID,
+        REF=record.REF,
+        ALT=record.ALT,
         gene_id=gene_id,
         allele_string=allele_string,
         variant_type=vtype,

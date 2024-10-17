@@ -11,7 +11,8 @@ from .vcf import Reader, Record
 __all__ = [
     "VCFProcessor",
     "Reader",
-    "Record"
+    "Record",
+    "VariantAnnotation"
 ]
 
 stdout_handler = logging.StreamHandler(stream=sys.stdout)
@@ -74,4 +75,3 @@ class VCFProcessor:
 
             for variant in map(asdict, annotation_gen):
                 writer.writerow(variant)
-

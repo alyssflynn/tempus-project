@@ -104,7 +104,7 @@ class Reader:
             raise ReaderError("Invalid record format!", line, line_no)
         
         return Record(*row, line_no=line_no)
-    
+        
     def annotation_generator(self, batch_size: int = 50):
         """Yield batches of records annotations from the .read() record generator."""
         batch = []
