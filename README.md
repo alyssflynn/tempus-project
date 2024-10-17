@@ -2,6 +2,8 @@
 
 Varanno is a prototype variant annotation tool written in python. This was developed for a take home interview project with Tempus AI. 
 
+[See project notes below!](#notes)
+
 ## Getting started
 
 Clone the project and cd into the project directory.
