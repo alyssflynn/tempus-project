@@ -1,0 +1,124 @@
+[
+    {
+      "transcript_consequences": [
+        {
+          "transcript_id": "ENST00000296589",
+          "hgnc_id": "HGNC:16472",
+          "gene_symbol": "SLC45A2",
+          "variant_allele": "C",
+          "biotype": "protein_coding",
+          "strand": -1,
+          "consequence_terms": [
+            "splice_region_variant",
+            "splice_polypyrimidine_tract_variant",
+            "intron_variant"
+          ],
+          "gene_symbol_source": "HGNC",
+          "gene_id": "ENSG00000164175",
+          "impact": "LOW"
+        },
+        {
+          "gene_symbol_source": "HGNC",
+          "impact": "LOW",
+          "gene_id": "ENSG00000164175",
+          "consequence_terms": [
+            "splice_region_variant",
+            "splice_polypyrimidine_tract_variant",
+            "intron_variant"
+          ],
+          "biotype": "protein_coding",
+          "variant_allele": "C",
+          "strand": -1,
+          "gene_symbol": "SLC45A2",
+          "transcript_id": "ENST00000382102",
+          "hgnc_id": "HGNC:16472"
+        },
+        {
+          "transcript_id": "ENST00000509381",
+          "hgnc_id": "HGNC:16472",
+          "gene_symbol": "SLC45A2",
+          "biotype": "protein_coding",
+          "variant_allele": "C",
+          "strand": -1,
+          "consequence_terms": [
+            "splice_region_variant",
+            "splice_polypyrimidine_tract_variant",
+            "intron_variant"
+          ],
+          "gene_symbol_source": "HGNC",
+          "gene_id": "ENSG00000164175",
+          "impact": "LOW"
+        },
+        {
+          "consequence_terms": [
+            "splice_region_variant",
+            "splice_polypyrimidine_tract_variant",
+            "intron_variant"
+          ],
+          "gene_symbol_source": "HGNC",
+          "gene_id": "ENSG00000164175",
+          "impact": "LOW",
+          "transcript_id": "ENST00000510600",
+          "flags": [
+            "cds_end_NF"
+          ],
+          "hgnc_id": "HGNC:16472",
+          "variant_allele": "C",
+          "biotype": "protein_coding",
+          "strand": -1,
+          "gene_symbol": "SLC45A2"
+        }
+      ],
+      "allele_string": "T/C",
+      "strand": 1,
+      "end": 33954511,
+      "assembly_name": "GRCh38",
+      "most_severe_consequence": "splice_region_variant",
+      "seq_region_name": "5",
+      "input": "5:g.33954511T>C",
+      "colocated_variants": [
+        {
+          "clin_sig_allele": "C:likely_benign",
+          "end": 33954511,
+          "phenotype_or_disease": 1,
+          "strand": 1,
+          "start": 33954511,
+          "allele_string": "T/C",
+          "clin_sig": [
+            "likely_benign"
+          ],
+          "seq_region_name": "5",
+          "var_synonyms": {
+            "ClinVar": [
+              "RCV002078366",
+              "VCV001576466"
+            ]
+          },
+          "id": "rs2111928196",
+          "frequencies": {
+            "C": {
+              "gnomadg_fin": 0.4161,
+              "gnomadg_asj": 0.5772,
+              "sas": 0.4908,
+              "gnomadg_amr": 0.4826,
+              "amr": 0.4553,
+              "eur": 0.4722,
+              "gnomadg_eas": 0.506,
+              "eas": 0.5367,
+              "gnomadg_sas": 0.5172,
+              "gnomadg_afr": 0.2392,
+              "gnomadg_oth": 0.4746,
+              "afr": 0.2133,
+              "gnomadg_ami": 0.5342,
+              "gnomadg_mid": 0.5475,
+              "gnomadg": 0.4183,
+              "gnomadg_nfe": 0.4875,
+              "af": 0.4181
+            }
+          }
+        }
+      ],
+      "start": 33954511,
+      "id": "5:g.33954511T>C"
+    }
+]

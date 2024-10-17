@@ -1,0 +1,32 @@
+[
+    {
+      "seq_region_name": "1",
+      "intergenic_consequences": [
+        {
+          "variant_allele": "G",
+          "impact": "MODIFIER",
+          "consequence_terms": [
+            "intergenic_variant"
+          ]
+        }
+      ],
+      "id": "1:g.1158631A>G",
+      "colocated_variants": [
+        {
+          "allele_string": "A/G",
+          "seq_region_name": "1",
+          "id": "rs1646656191",
+          "end": 1158631,
+          "strand": 1,
+          "start": 1158631
+        }
+      ],
+      "start": 1158631,
+      "input": "1:g.1158631A>G",
+      "allele_string": "A/G",
+      "assembly_name": "GRCh38",
+      "most_severe_consequence": "intergenic_variant",
+      "end": 1158631,
+      "strand": 1
+    }
+]

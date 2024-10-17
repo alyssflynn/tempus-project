@@ -1,0 +1,256 @@
+[
+    {
+      "seq_region_name": "9",
+      "end": 22125502,
+      "transcript_consequences": [
+        {
+          "strand": 1,
+          "gene_id": "ENSG00000240498",
+          "impact": "MODIFIER",
+          "consequence_terms": [
+            "downstream_gene_variant"
+          ],
+          "transcript_id": "ENST00000421632",
+          "gene_symbol": "CDKN2B-AS1",
+          "gene_symbol_source": "HGNC",
+          "distance": 4813,
+          "variant_allele": "C",
+          "biotype": "lncRNA",
+          "hgnc_id": "HGNC:34341"
+        },
+        {
+          "gene_symbol": "CDKN2B-AS1",
+          "transcript_id": "ENST00000422420",
+          "gene_id": "ENSG00000240498",
+          "strand": 1,
+          "impact": "MODIFIER",
+          "consequence_terms": [
+            "downstream_gene_variant"
+          ],
+          "hgnc_id": "HGNC:34341",
+          "variant_allele": "C",
+          "biotype": "lncRNA",
+          "gene_symbol_source": "HGNC",
+          "distance": 4405
+        },
+        {
+          "variant_allele": "C",
+          "biotype": "lncRNA",
+          "hgnc_id": "HGNC:34341",
+          "distance": 4405,
+          "gene_symbol_source": "HGNC",
+          "transcript_id": "ENST00000428597",
+          "gene_symbol": "CDKN2B-AS1",
+          "consequence_terms": [
+            "downstream_gene_variant"
+          ],
+          "gene_id": "ENSG00000240498",
+          "strand": 1,
+          "impact": "MODIFIER"
+        },
+        {
+          "distance": 4930,
+          "gene_symbol_source": "HGNC",
+          "variant_allele": "C",
+          "biotype": "lncRNA",
+          "hgnc_id": "HGNC:34341",
+          "consequence_terms": [
+            "downstream_gene_variant"
+          ],
+          "gene_id": "ENSG00000240498",
+          "impact": "MODIFIER",
+          "strand": 1,
+          "transcript_id": "ENST00000577551",
+          "gene_symbol": "CDKN2B-AS1"
+        },
+        {
+          "transcript_id": "ENST00000580576",
+          "gene_symbol": "CDKN2B-AS1",
+          "gene_id": "ENSG00000240498",
+          "impact": "MODIFIER",
+          "strand": 1,
+          "consequence_terms": [
+            "downstream_gene_variant"
+          ],
+          "variant_allele": "C",
+          "biotype": "lncRNA",
+          "hgnc_id": "HGNC:34341",
+          "gene_symbol_source": "HGNC",
+          "distance": 4865
+        },
+        {
+          "strand": 1,
+          "gene_id": "ENSG00000240498",
+          "impact": "MODIFIER",
+          "consequence_terms": [
+            "downstream_gene_variant"
+          ],
+          "transcript_id": "ENST00000581051",
+          "gene_symbol": "CDKN2B-AS1",
+          "gene_symbol_source": "HGNC",
+          "distance": 4930,
+          "variant_allele": "C",
+          "biotype": "lncRNA",
+          "hgnc_id": "HGNC:34341"
+        },
+        {
+          "distance": 4930,
+          "gene_symbol_source": "HGNC",
+          "variant_allele": "C",
+          "biotype": "lncRNA",
+          "hgnc_id": "HGNC:34341",
+          "consequence_terms": [
+            "downstream_gene_variant"
+          ],
+          "gene_id": "ENSG00000240498",
+          "impact": "MODIFIER",
+          "strand": 1,
+          "transcript_id": "ENST00000582072",
+          "gene_symbol": "CDKN2B-AS1"
+        },
+        {
+          "transcript_id": "ENST00000584020",
+          "gene_symbol": "CDKN2B-AS1",
+          "consequence_terms": [
+            "downstream_gene_variant"
+          ],
+          "gene_id": "ENSG00000240498",
+          "strand": 1,
+          "impact": "MODIFIER",
+          "variant_allele": "C",
+          "biotype": "lncRNA",
+          "hgnc_id": "HGNC:34341",
+          "distance": 4930,
+          "gene_symbol_source": "HGNC"
+        },
+        {
+          "gene_symbol_source": "HGNC",
+          "distance": 4930,
+          "hgnc_id": "HGNC:34341",
+          "biotype": "lncRNA",
+          "variant_allele": "C",
+          "strand": 1,
+          "gene_id": "ENSG00000240498",
+          "impact": "MODIFIER",
+          "consequence_terms": [
+            "downstream_gene_variant"
+          ],
+          "gene_symbol": "CDKN2B-AS1",
+          "transcript_id": "ENST00000584637"
+        },
+        {
+          "gene_id": "ENSG00000240498",
+          "strand": 1,
+          "impact": "MODIFIER",
+          "consequence_terms": [
+            "downstream_gene_variant"
+          ],
+          "transcript_id": "ENST00000584816",
+          "gene_symbol": "CDKN2B-AS1",
+          "gene_symbol_source": "HGNC",
+          "distance": 4930,
+          "variant_allele": "C",
+          "biotype": "lncRNA",
+          "hgnc_id": "HGNC:34341"
+        },
+        {
+          "hgnc_id": "HGNC:34341",
+          "biotype": "lncRNA",
+          "variant_allele": "C",
+          "gene_symbol_source": "HGNC",
+          "distance": 4958,
+          "gene_symbol": "CDKN2B-AS1",
+          "transcript_id": "ENST00000585267",
+          "gene_id": "ENSG00000240498",
+          "strand": 1,
+          "impact": "MODIFIER",
+          "consequence_terms": [
+            "downstream_gene_variant"
+          ]
+        },
+        {
+          "gene_symbol_source": "HGNC",
+          "distance": 4789,
+          "hgnc_id": "HGNC:34341",
+          "biotype": "lncRNA",
+          "variant_allele": "C",
+          "strand": 1,
+          "gene_id": "ENSG00000240498",
+          "impact": "MODIFIER",
+          "consequence_terms": [
+            "downstream_gene_variant"
+          ],
+          "gene_symbol": "CDKN2B-AS1",
+          "transcript_id": "ENST00000643286"
+        },
+        {
+          "distance": 4791,
+          "gene_symbol_source": "HGNC",
+          "variant_allele": "C",
+          "biotype": "lncRNA",
+          "hgnc_id": "HGNC:34341",
+          "consequence_terms": [
+            "downstream_gene_variant"
+          ],
+          "gene_id": "ENSG00000240498",
+          "strand": 1,
+          "impact": "MODIFIER",
+          "transcript_id": "ENST00000644233",
+          "gene_symbol": "CDKN2B-AS1"
+        },
+        {
+          "consequence_terms": [
+            "downstream_gene_variant"
+          ],
+          "impact": "MODIFIER",
+          "gene_id": "ENSG00000240498",
+          "strand": 1,
+          "gene_symbol": "CDKN2B-AS1",
+          "transcript_id": "ENST00000645223",
+          "distance": 4793,
+          "gene_symbol_source": "HGNC",
+          "hgnc_id": "HGNC:34341",
+          "variant_allele": "C",
+          "biotype": "lncRNA"
+        },
+        {
+          "hgnc_id": "HGNC:34341",
+          "biotype": "lncRNA",
+          "variant_allele": "C",
+          "gene_symbol_source": "HGNC",
+          "gene_symbol": "CDKN2B-AS1",
+          "transcript_id": "ENST00000650946",
+          "hgvsc": "ENST00000650946.1:n.439-1601_439-1600insC",
+          "consequence_terms": [
+            "intron_variant",
+            "non_coding_transcript_variant"
+          ],
+          "strand": 1,
+          "gene_id": "ENSG00000240498",
+          "impact": "MODIFIER"
+        },
+        {
+          "distance": 4792,
+          "gene_symbol_source": "HGNC",
+          "hgnc_id": "HGNC:34341",
+          "biotype": "lncRNA",
+          "variant_allele": "C",
+          "consequence_terms": [
+            "downstream_gene_variant"
+          ],
+          "strand": 1,
+          "gene_id": "ENSG00000240498",
+          "impact": "MODIFIER",
+          "gene_symbol": "CDKN2B-AS1",
+          "transcript_id": "ENST00000658981"
+        }
+      ],
+      "assembly_name": "GRCh38",
+      "input": "9 22125503 22125502 -/C 1",
+      "start": 22125503,
+      "allele_string": "-/C",
+      "strand": 1,
+      "most_severe_consequence": "intron_variant",
+      "id": "9_22125503_-/C"
+    }
+]

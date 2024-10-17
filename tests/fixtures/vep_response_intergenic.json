@@ -1,0 +1,23 @@
+[
+    {
+      "intergenic_consequences": [
+        {
+          "impact": "MODIFIER",
+          "consequence_terms": [
+            "intergenic_variant"
+          ],
+          "variant_allele": "-"
+        }
+      ],
+      "most_severe_consequence": "intergenic_variant",
+      "input": "1 1158631 1158632 AG/G 1",
+      "minimised": 1,
+      "seq_region_name": "1",
+      "assembly_name": "GRCh38",
+      "start": 1158631,
+      "allele_string": "A/-",
+      "end": 1158631,
+      "strand": 1,
+      "id": "1_1158631_A/-"
+    }
+]

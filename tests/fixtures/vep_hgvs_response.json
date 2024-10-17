@@ -1,0 +1,417 @@
+[
+    {
+      "start": 22125504,
+      "strand": 1,
+      "assembly_name": "GRCh38",
+      "end": 22125504,
+      "id": "9:g.22125504G>C",
+      "colocated_variants": [
+        {
+          "frequencies": {
+            "C": {
+              "gnomadg_fin": 0.4161,
+              "gnomadg_asj": 0.5772,
+              "sas": 0.4908,
+              "gnomadg_amr": 0.4826,
+              "amr": 0.4553,
+              "eur": 0.4722,
+              "gnomadg_eas": 0.506,
+              "eas": 0.5367,
+              "gnomadg_sas": 0.5172,
+              "gnomadg_afr": 0.2392,
+              "gnomadg_oth": 0.4746,
+              "afr": 0.2133,
+              "gnomadg_ami": 0.5342,
+              "gnomadg_mid": 0.5475,
+              "gnomadg": 0.4183,
+              "gnomadg_nfe": 0.4875,
+              "af": 0.4181
+            }
+          },
+          "allele_string": "G/A/C",
+          "pubmed": [
+            21894447,
+            29972410,
+            30571812,
+            34137427,
+            34276231,
+            22403240,
+            22856518,
+            24728607,
+            30988702,
+            18780302,
+            29340220,
+            27424552,
+            26252781,
+            17634449,
+            18852197,
+            18979498,
+            19164808,
+            19207022,
+            19750184,
+            19924713,
+            19955471,
+            20017983,
+            20098575,
+            20159871,
+            20549515,
+            20981302,
+            21242481,
+            21369780,
+            21606135,
+            21698238,
+            21804106,
+            21860704,
+            22042884,
+            22144573,
+            22623978,
+            23468967,
+            24932356,
+            26847647,
+            26958643,
+            28686695,
+            32858814,
+            26950853,
+            28209224,
+            20502693,
+            19956433,
+            21297524,
+            22429504,
+            22848412,
+            26483964,
+            22199011,
+            29472232,
+            19474294,
+            21149552,
+            29331485,
+            23963167,
+            27153677,
+            30065929,
+            24676469,
+            17554300,
+            27892471,
+            24098343,
+            35379196,
+            18224312,
+            18533027,
+            31053292,
+            23142796,
+            27386823,
+            26677855,
+            34296082,
+            33488114,
+            25617895,
+            29143599,
+            22029572,
+            18654002,
+            22295058,
+            28400043,
+            31804579,
+            35994463,
+            20435227,
+            19501493,
+            23870195,
+            23587283,
+            32392191,
+            31115525,
+            32077919,
+            18675980,
+            19135198,
+            24942486,
+            27721851,
+            24926413,
+            26982883,
+            22400124,
+            19885677,
+            22621687,
+            18469204,
+            27790247,
+            20175863,
+            20335276,
+            21270277,
+            25717410,
+            27249003,
+            31770616,
+            27736948,
+            27015805,
+            19578366,
+            34603024,
+            18704761,
+            30457165,
+            21971053,
+            21400687,
+            28138111,
+            26071660,
+            29309886,
+            2734031
+          ],
+          "end": 22125504,
+          "var_synonyms": {
+            "PharmGKB": [
+              "PA166157726"
+            ],
+            "ClinVar": [
+              "RCV001003460",
+              "VCV000812642"
+            ]
+          },
+          "clin_sig": [
+            "risk_factor"
+          ],
+          "strand": 1,
+          "id": "rs1333049",
+          "seq_region_name": "9",
+          "phenotype_or_disease": 1,
+          "clin_sig_allele": "C:risk_factor",
+          "start": 22125504
+        }
+      ],
+      "seq_region_name": "9",
+      "input": "9:g.22125504G>C",
+      "most_severe_consequence": "intron_variant",
+      "allele_string": "G/C",
+      "transcript_consequences": [
+        {
+          "variant_allele": "C",
+          "distance": 4815,
+          "biotype": "lncRNA",
+          "strand": 1,
+          "transcript_id": "ENST00000421632",
+          "hgnc_id": "HGNC:34341",
+          "gene_symbol_source": "HGNC",
+          "gene_symbol": "CDKN2B-AS1",
+          "impact": "MODIFIER",
+          "gene_id": "ENSG00000240498",
+          "consequence_terms": [
+            "downstream_gene_variant"
+          ]
+        },
+        {
+          "transcript_id": "ENST00000422420",
+          "strand": 1,
+          "biotype": "lncRNA",
+          "distance": 4407,
+          "variant_allele": "C",
+          "gene_id": "ENSG00000240498",
+          "gene_symbol": "CDKN2B-AS1",
+          "impact": "MODIFIER",
+          "gene_symbol_source": "HGNC",
+          "hgnc_id": "HGNC:34341",
+          "consequence_terms": [
+            "downstream_gene_variant"
+          ]
+        },
+        {
+          "hgnc_id": "HGNC:34341",
+          "gene_symbol_source": "HGNC",
+          "gene_symbol": "CDKN2B-AS1",
+          "impact": "MODIFIER",
+          "gene_id": "ENSG00000240498",
+          "variant_allele": "C",
+          "distance": 4407,
+          "strand": 1,
+          "biotype": "lncRNA",
+          "transcript_id": "ENST00000428597",
+          "consequence_terms": [
+            "downstream_gene_variant"
+          ]
+        },
+        {
+          "consequence_terms": [
+            "downstream_gene_variant"
+          ],
+          "biotype": "lncRNA",
+          "strand": 1,
+          "distance": 4932,
+          "variant_allele": "C",
+          "transcript_id": "ENST00000577551",
+          "gene_symbol_source": "HGNC",
+          "hgnc_id": "HGNC:34341",
+          "gene_id": "ENSG00000240498",
+          "gene_symbol": "CDKN2B-AS1",
+          "impact": "MODIFIER"
+        },
+        {
+          "consequence_terms": [
+            "downstream_gene_variant"
+          ],
+          "biotype": "lncRNA",
+          "strand": 1,
+          "variant_allele": "C",
+          "distance": 4867,
+          "transcript_id": "ENST00000580576",
+          "gene_symbol_source": "HGNC",
+          "hgnc_id": "HGNC:34341",
+          "gene_id": "ENSG00000240498",
+          "gene_symbol": "CDKN2B-AS1",
+          "impact": "MODIFIER"
+        },
+        {
+          "consequence_terms": [
+            "downstream_gene_variant"
+          ],
+          "strand": 1,
+          "biotype": "lncRNA",
+          "distance": 4932,
+          "variant_allele": "C",
+          "transcript_id": "ENST00000581051",
+          "gene_symbol_source": "HGNC",
+          "hgnc_id": "HGNC:34341",
+          "gene_id": "ENSG00000240498",
+          "gene_symbol": "CDKN2B-AS1",
+          "impact": "MODIFIER"
+        },
+        {
+          "consequence_terms": [
+            "downstream_gene_variant"
+          ],
+          "strand": 1,
+          "biotype": "lncRNA",
+          "distance": 4932,
+          "variant_allele": "C",
+          "transcript_id": "ENST00000582072",
+          "gene_symbol_source": "HGNC",
+          "hgnc_id": "HGNC:34341",
+          "gene_id": "ENSG00000240498",
+          "gene_symbol": "CDKN2B-AS1",
+          "impact": "MODIFIER"
+        },
+        {
+          "transcript_id": "ENST00000584020",
+          "strand": 1,
+          "biotype": "lncRNA",
+          "distance": 4932,
+          "variant_allele": "C",
+          "gene_id": "ENSG00000240498",
+          "gene_symbol": "CDKN2B-AS1",
+          "impact": "MODIFIER",
+          "gene_symbol_source": "HGNC",
+          "hgnc_id": "HGNC:34341",
+          "consequence_terms": [
+            "downstream_gene_variant"
+          ]
+        },
+        {
+          "transcript_id": "ENST00000584637",
+          "biotype": "lncRNA",
+          "strand": 1,
+          "distance": 4932,
+          "variant_allele": "C",
+          "gene_id": "ENSG00000240498",
+          "gene_symbol": "CDKN2B-AS1",
+          "impact": "MODIFIER",
+          "gene_symbol_source": "HGNC",
+          "hgnc_id": "HGNC:34341",
+          "consequence_terms": [
+            "downstream_gene_variant"
+          ]
+        },
+        {
+          "transcript_id": "ENST00000584816",
+          "strand": 1,
+          "biotype": "lncRNA",
+          "distance": 4932,
+          "variant_allele": "C",
+          "gene_id": "ENSG00000240498",
+          "impact": "MODIFIER",
+          "gene_symbol": "CDKN2B-AS1",
+          "gene_symbol_source": "HGNC",
+          "hgnc_id": "HGNC:34341",
+          "consequence_terms": [
+            "downstream_gene_variant"
+          ]
+        },
+        {
+          "transcript_id": "ENST00000585267",
+          "variant_allele": "C",
+          "distance": 4960,
+          "strand": 1,
+          "biotype": "lncRNA",
+          "gene_symbol": "CDKN2B-AS1",
+          "impact": "MODIFIER",
+          "gene_id": "ENSG00000240498",
+          "hgnc_id": "HGNC:34341",
+          "gene_symbol_source": "HGNC",
+          "consequence_terms": [
+            "downstream_gene_variant"
+          ]
+        },
+        {
+          "gene_id": "ENSG00000240498",
+          "gene_symbol": "CDKN2B-AS1",
+          "impact": "MODIFIER",
+          "gene_symbol_source": "HGNC",
+          "hgnc_id": "HGNC:34341",
+          "transcript_id": "ENST00000643286",
+          "biotype": "lncRNA",
+          "strand": 1,
+          "variant_allele": "C",
+          "distance": 4791,
+          "consequence_terms": [
+            "downstream_gene_variant"
+          ]
+        },
+        {
+          "consequence_terms": [
+            "downstream_gene_variant"
+          ],
+          "transcript_id": "ENST00000644233",
+          "distance": 4793,
+          "variant_allele": "C",
+          "strand": 1,
+          "biotype": "lncRNA",
+          "impact": "MODIFIER",
+          "gene_symbol": "CDKN2B-AS1",
+          "gene_id": "ENSG00000240498",
+          "hgnc_id": "HGNC:34341",
+          "gene_symbol_source": "HGNC"
+        },
+        {
+          "consequence_terms": [
+            "downstream_gene_variant"
+          ],
+          "transcript_id": "ENST00000645223",
+          "variant_allele": "C",
+          "distance": 4795,
+          "strand": 1,
+          "biotype": "lncRNA",
+          "impact": "MODIFIER",
+          "gene_symbol": "CDKN2B-AS1",
+          "gene_id": "ENSG00000240498",
+          "hgnc_id": "HGNC:34341",
+          "gene_symbol_source": "HGNC"
+        },
+        {
+          "consequence_terms": [
+            "intron_variant",
+            "non_coding_transcript_variant"
+          ],
+          "variant_allele": "C",
+          "biotype": "lncRNA",
+          "strand": 1,
+          "transcript_id": "ENST00000650946",
+          "hgnc_id": "HGNC:34341",
+          "gene_symbol_source": "HGNC",
+          "gene_symbol": "CDKN2B-AS1",
+          "impact": "MODIFIER",
+          "gene_id": "ENSG00000240498"
+        },
+        {
+          "transcript_id": "ENST00000658981",
+          "distance": 4794,
+          "variant_allele": "C",
+          "biotype": "lncRNA",
+          "strand": 1,
+          "impact": "MODIFIER",
+          "gene_symbol": "CDKN2B-AS1",
+          "gene_id": "ENSG00000240498",
+          "hgnc_id": "HGNC:34341",
+          "gene_symbol_source": "HGNC",
+          "consequence_terms": [
+            "downstream_gene_variant"
+          ]
+        }
+      ]
+    }
+
+]
