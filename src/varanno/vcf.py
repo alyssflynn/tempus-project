@@ -7,10 +7,6 @@ from .utils import VCF_META_KEYVAL, VCF_META_STRUCT
 log = logging.getLogger(__name__)
 
 
-class DuplicateHeaderError(Exception):
-    pass
-
-
 class ReaderError(Exception):
     def __init__(self, error: str, text: str = None, line_no: int = None):
         self.error = error
