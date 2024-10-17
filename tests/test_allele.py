@@ -1,5 +1,5 @@
 import pytest
-from varanno.allele import variant_type
+from varanno.allele import variant_type, parse_genotype
 
 
 @pytest.mark.parametrize("allelestr,result", [
@@ -16,3 +16,12 @@ from varanno.allele import variant_type
 ])
 def test_variant_type(allelestr, result):
     assert variant_type(allelestr) == result
+
+
+@pytest.mark.parametrize("gtstr, result", [
+    ("0/0", "homozygous_ref"),
+    ("0/1", "heterozygous"),
+    ("1/1", "homozygous_alt")
+])
+def test_parse_genotype(gtstr, result):
+    assert parse_genotype(gtstr) == result

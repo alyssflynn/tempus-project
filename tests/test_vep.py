@@ -1,19 +1,21 @@
 import json
 import pytest
-from varanno.vep import filter_vep_result, hgvs_string
+from varanno.vep import (
+    hgvs_string, first_element, find_vep_gene_id, 
+    find_vep_allele_string, find_vep_variant_effect, find_vep_maf
+)
 from . import FIXTURES_DIR
 
 
 @pytest.fixture
-def vep_intron_variant():
-    with open(FIXTURES_DIR.joinpath("vep_hgvs_response.json"), "r") as fle:
+def vep_hgvs_response():
+    with open(FIXTURES_DIR.joinpath("hgvs_response.json"), "r") as fle:
         return json.load(fle)
     
 
 @pytest.fixture
-def vep_intergenic_variant():
-    with open(FIXTURES_DIR.joinpath("vep_hgvs_response_rec1.json"), "r") as fle:
-        return json.load(fle)
+def vep_hgvs_response_data(vep_hgvs_response):
+    return vep_hgvs_response[0]
 
 
 @pytest.mark.parametrize("args,result", [
@@ -29,22 +31,26 @@ def test_hgvs_string_fails_for_invalid_input():
         hgvs_string("1", None, "A", "G")
 
 
-
-def test_filter_vep_result_intron_variant(vep_intron_variant):
-    assert filter_vep_result(vep_intron_variant, "C") == {
-        "gene_id": "ENSG00000240498",
-        "allele_string": "G/C",
-        "variant_type": "SNV_SUB",
-        "variant_effect": "intron_variant",
-        'minor_allele_frequency': 0.4181,
-    }
+@pytest.mark.parametrize("input,result", [
+    ([{"a": 1, "b": 2}], {"a": 1, "b": 2}),
+    ({"a": 1, "b": 2}, {"a": 1, "b": 2}),
+])
+def test_first_element(input, result):
+    assert first_element(input) == result
 
 
-def test_filter_vep_result_intergenic_variant(vep_intergenic_variant):
-    assert filter_vep_result(vep_intergenic_variant, "G") == {
-        "gene_id": None,
-        "allele_string": "A/G",
-        "variant_type": "SNV_SUB",
-        "variant_effect": "intergenic_variant",
-        "minor_allele_frequency": None
-    }
+def test_find_vep_gene_id(vep_hgvs_response_data):
+    assert find_vep_gene_id(vep_hgvs_response_data) == "ENSG00000135744"
+
+
+def test_find_vep_allele_string(vep_hgvs_response_data):
+    assert find_vep_allele_string(vep_hgvs_response_data) == "T/C"
+
+
+def test_find_vep_variant_effect(vep_hgvs_response_data):
+    assert find_vep_variant_effect(vep_hgvs_response_data) == "missense_variant"
+
+
+def test_find_vep_maf(vep_hgvs_response_data):
+    assert find_vep_maf(vep_hgvs_response_data, "C") == 0.7051
+    assert find_vep_maf(vep_hgvs_response_data, "A") is None

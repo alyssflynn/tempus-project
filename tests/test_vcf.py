@@ -1,6 +1,6 @@
 import pytest
 from pathlib import Path
-from varanno.vcf import Reader, ReaderError
+from varanno.vcf import Reader, ReaderError, Record
 
 
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -12,13 +12,23 @@ META_INIT = {k: [] for k in ('INFO', 'FILTER', 'FORMAT', 'ALT')}
 @pytest.fixture
 def reader():
     new_reader = Reader(VCF_FILE)
-    new_reader.read()
+    new_reader.load_records()
     return new_reader
+
+
+@pytest.fixture
+def header_line():
+    return "#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	sample"
+
+
+@pytest.fixture
+def record_line():
+    return "1	1158631	.	A	G	2965	PASS	BRF=0.16;FR=1.0000;HP=1;HapScore=1;MGOF=3;MMLQ=33;MQ=59.75;NF=89;NR=67;PP=2965;QD=20;SC=CACTTTCCTCATCCACTTTGA;SbPval=0.58;Source=Platypus;TC=160;TCF=90;TCR=70;TR=156;WE=1158639;WS=1158621	GT:GL:GOF:GQ:NR:NV	1/1:-300.0,-43.88,0.0:3:99:160:156"
 
 
 def test_vcf_read_succeeds():
     reader = Reader(VCF_FILE)
-    reader.read()
+    reader.load_records()
     assert len(reader.records) == 11765
     assert reader.header == (
         "CHROM", "POS", "ID", "REF", "ALT", "QUAL", 
@@ -29,8 +39,11 @@ def test_vcf_read_succeeds():
 def test_non_vcf_read_fails():
     with pytest.raises(ReaderError) as err:
         reader = Reader(NON_VCF_FILE)
-        reader.read()
-        assert str(err.value) == ""
+        list(reader.read())
+
+    assert err.value.error == "Line format invalid!"
+    assert err.value.text == "Ceci n'est pas un VCF file"
+    assert err.value.line_no == 1
 
 
 def test_reader_parsed_metadata(reader):
@@ -71,5 +84,28 @@ def test_reader_validate_head():
     reader.validate_head(line) 
     assert reader.header == (
         "CHROM", "POS", "ID", "REF", "ALT", "QUAL", 
+        "FILTER", "INFO", "FORMAT", "sample"
+    )
+
+
+def test_reader_validate_head_fails_on_duplicate():
+    line = "#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	sample"
+    reader = Reader()
+    reader.validate_head(line) 
+    with pytest.raises(ReaderError) as error:
+        reader.validate_head(line) 
+    assert error.value.error == "Duplicate header found"
+
+
+def test_reader_build_record(header_line, record_line):
+    reader = Reader()
+    reader.validate_head(header_line) 
+    rec = reader.build_record(record_line)
+    assert isinstance(rec, Record)
+
+
+def test_splitrow(header_line):
+    assert Reader.splitrow(header_line) == (
+        "#CHROM", "POS", "ID", "REF", "ALT", "QUAL", 
         "FILTER", "INFO", "FORMAT", "sample"
     )

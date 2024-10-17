@@ -1,5 +1,5 @@
 import pytest 
-from varanno.utils import parse_record_info, parse_format_sample, parse_genotype
+from varanno.utils import parse_record_info, parse_format_sample, cast_float
 
 
 @pytest.fixture
@@ -25,10 +25,11 @@ def test_parse_format_sample():
         'GT': '1/1', 'GL': '-300.0,-43.88,0.0', 'GOF': '3', 'GQ': '99', 'NR': '160', 'NV': '156'
     }
 
-@pytest.mark.parametrize("gtstr, result", [
-    ("0/0", "homozygous_ref"),
-    ("0/1", "heterozygous"),
-    ("1/1", "homozygous_alt")
+
+@pytest.mark.parametrize("input, result", [
+    ("4", 4.0),
+    ("A", "A"),
+    (["A"], ["A"])
 ])
-def test_parse_genotype(gtstr, result):
-    assert parse_genotype(gtstr) == result
+def test_cast_float(input, result):
+    assert cast_float(input) == result
