@@ -1,20 +1,10 @@
 import re
-from dataclasses import dataclass
+import logging
+from .record import Record, annotate_batch
 from .utils import VCF_META_KEYVAL, VCF_META_STRUCT
 
 
-@dataclass(slots=True)
-class Record:
-    CHROM: str
-    POS: int
-    ID: str 
-    REF: str
-    ALT: str
-    QUAL: str
-    FILTER: str
-    INFO: str
-    FORMAT: str = None
-    SAMPLE: str = None
+log = logging.getLogger(__name__)
 
 
 class DuplicateHeaderError(Exception):
@@ -27,19 +17,25 @@ class ReaderError(Exception):
         self.text = text
         self.line_no = line_no
         super().__init__(error, text, line_no)
+        log.error(self)
+    
+    def logstr(self):
+        return f"{self.error}: {self.text} [{self.line_no}]"
     
 
 class Reader:
     _meta_multi = ('INFO', 'FILTER', 'FORMAT', 'ALT')
     _head_required = {"CHROM", "POS", "ID", "REF", "ALT", "QUAL", "FILTER", "INFO"}
-    # _head_allowed = {"FORMAT", "sample"} # TODO: allow multiple named samples e.g. "NA12878"
 
-    def __init__(self, input_file_path: str = None, output_file_path: str = None):
-        self.infile = input_file_path
-        self.outfile = output_file_path
+    def __init__(self, infile: str = None):
+        self.infile = infile
+        self._init_meta()
+
+    def _init_meta(self):
         self.metadata = {k: [] for k in self._meta_multi}
         self.header = None
         self.records = []
+        self.errors = []
 
     def meta_structs(self):
         for name in self._meta_multi:
@@ -48,6 +44,7 @@ class Reader:
 
     def read(self, infile: str = None):
         self.infile = infile or self.infile
+        self._init_meta()
 
         if not self.infile:
             raise ReaderError("Input file missing")
@@ -57,16 +54,24 @@ class Reader:
                 line_no = i + 1
                 line = line.strip()
 
-                if line.startswith("##"):
-                    # TODO: yield metadata_factory(line) ?
-                    self.parse_metadata(line, line_no)
-                elif line.startswith("#"):
-                    self.validate_head(line, line_no)
-                elif self.header:
-                    # TODO: yield record_factory(line) ?
-                    self.build_record(line, line_no)
-                else:
-                    raise ReaderError("Line format invalid!", line, line_no)
+                try:
+                    if line.startswith("##"):
+                        self.parse_metadata(line, line_no)
+                    elif line.startswith("#"):
+                        self.validate_head(line, line_no)
+                    elif self.header:
+                        record = self.build_record(line, line_no)
+                        yield record
+                    else:
+                        raise ReaderError("Line format invalid!", line, line_no)
+                    
+                except ReaderError as err:
+                    log.warning(err)
+                    self.errors.append(err)
+    
+    def load_records(self):
+        self.records = list(self.read())
+        return self.records
 
     def validate_head(self, line: str, line_no: int = None):
         if self.header:
@@ -77,15 +82,6 @@ class Reader:
             raise ReaderError("Missing required header fields")
         
         self.header = head
-        
-        # TODO: remove
-        # valid = self._head_required.issubset(set(head)) \
-        #     and self._head_required.union(self._head_allowed) == set(head)
-        # print(head)
-        # if valid:
-        #     self.header = head
-        # else:
-        #     raise ReaderError(line, line_no)
         
     def parse_metadata(self, line: str, line_no: int = None):
         if (m := re.match(VCF_META_STRUCT, line)):
@@ -106,11 +102,23 @@ class Reader:
         if len(row) != len(self.header):
             raise ReaderError("Invalid record format!", line, line_no)
         
-        record = Record(*row)
-        self.records.append(record)
-        return record
+        return Record(*row, line_no=line_no)
+    
+    def annotation_generator(self, batch_size: int = 50):
+        """Yield batches of records annotations from the .read() record generator."""
+        batch = []
+        for item in self.read():
+            batch.append(item)
+            if len(batch) == batch_size:
+                yield from annotate_batch(batch)
+                batch = []
+                
+        # Yield any remaining items in the final batch
+        if batch:
+            yield from annotate_batch(batch)
 
     @staticmethod
     def splitrow(line: str):
         """Separates columns in a VCF file row. Lines should be tab-delimited."""
         return tuple(re.split(r"\t", line))
+    
