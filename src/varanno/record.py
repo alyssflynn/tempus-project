@@ -48,6 +48,7 @@ class VariantAnnotation:
     ID: str 
     REF: str
     ALT: str
+    hgvs: str
     gene_id: str
     allele_string: str
     variant_type: str
@@ -98,6 +99,7 @@ def annotation_factory(record: Record, vep_data: dict = None):
         ID=record.ID,
         REF=record.REF,
         ALT=record.ALT,
+        hgvs=record.hgvs,
         gene_id=gene_id,
         allele_string=allele_string,
         variant_type=vtype,

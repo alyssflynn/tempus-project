@@ -51,6 +51,10 @@ def variant_annotation():
     return VariantAnnotation("ENSG00000078808","A/G","SNV_SUB","synonymous_variant",0.5,160.0,156.0,97.5,"homozygous_alt")
 
 
+def test_record_hgvs(record):
+    assert record.hgvs == "5:g.33954511T>C"
+
+
 def test_annotation_factory(record, vep_hgvs_response_data):
     result = annotation_factory(record, vep_hgvs_response_data)
     assert result == VariantAnnotation(
@@ -59,6 +63,7 @@ def test_annotation_factory(record, vep_hgvs_response_data):
         ID=".",
         REF="T",
         ALT="C",
+        hgvs="5:g.33954511T>C",
         gene_id='ENSG00000135744',
         allele_string='T/C',
         variant_type='SNV_SUB',
@@ -83,6 +88,7 @@ def test_annotate_batch(record):
             ID=".",
             REF="T",
             ALT="C",
+            hgvs="5:g.33954511T>C",
             gene_id='ENSG00000164175',
             allele_string='T/C',
             variant_type='SNV_SUB',
@@ -99,6 +105,7 @@ def test_annotate_batch(record):
             ID=".",
             REF="T",
             ALT="C",
+            hgvs="5:g.33954511T>C",
             gene_id='ENSG00000164175',
             allele_string='T/C',
             variant_type='SNV_SUB',
