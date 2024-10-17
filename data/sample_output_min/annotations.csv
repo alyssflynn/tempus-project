@@ -1,0 +1,14 @@
+gene_id,allele_string,variant_type,variant_effect,minor_allele_frequency,depth_of_sequence_coverage,num_reads_supporting_variant,pct_reads_supporting_variant,genotype
+ENSG00000078808,A/G,SNV_SUB,synonymous_variant,0.9533,160.0,156.0,97.5,homozygous_alt
+ENSG00000127054,A/G,SNV_SUB,splice_polypyrimidine_tract_variant,0.9519,152.0,148.0,97.3684,homozygous_alt
+ENSG00000127054,G/A,SNV_SUB,missense_variant,0.3101,137.0,135.0,98.5401,homozygous_alt
+ENSG00000127054,G/C,SNV_SUB,intron_variant,0.8255,136.0,134.0,98.5294,homozygous_alt
+ENSG00000215915,C/G,SNV_SUB,intron_variant,1,137.0,133.0,97.0803,homozygous_alt
+ENSG00000248333,A/G,SNV_SUB,intron_variant,0.6218,264.0,123.0,46.5909,heterozygous
+ENSG00000248333,G/T,SNV_SUB,intron_variant,0.6204,196.0,96.0,48.9796,heterozygous
+ENSG00000248333,T/C,SNV_SUB,intron_variant,0.863,189.0,186.0,98.4127,homozygous_alt
+ENSG00000008128,A/C,SNV_SUB,intron_variant,0.752,178.0,131.0,73.5955,heterozygous
+ENSG00000008128,C/G,SNV_SUB,splice_region_variant,,259.0,60.0,23.166,heterozygous
+ENSG00000008128,-/TTTCTT,MNV_INS,inframe_insertion,,305.0,74.0,24.2623,
+ENSG00000008128,-/AT,MNV_INS,intron_variant,,485.0,154.0,31.7526,heterozygous
+ENSG00000008128,G/A,SNV_SUB,intron_variant,,379.0,60.0,15.8311,heterozygous
