@@ -60,10 +60,9 @@ annotations_df = pd.DataFrame(annotations)
 An important thing to note is that the annotation process involves a lot of calls to the VEP API, so you should avoid running annotations more than once. A good strategy would be to run the script in the console, and load the results into a dataframe (or your format of choice) one the process is complete.
 
 ```bash
-python -m varanno -f "path/to/vcf.txt" -o "output"
-...
+$ python -m varanno -f "path/to/vcf.txt" -o "output"
 ```
-
+...then after waiting for it to complete...
 ```python3
 import pandas as pd
 from varanno import Reader, Record, VariantAnnotation
@@ -79,3 +78,20 @@ records_df = pd.DataFrame(reader.records)
 
 annotations_df = pd.read_csv(annotations_csv)
 ```
+
+## Notes
+
+### Dependency avoidance
+There are a lot of existing tools for reading VCF files out there, but I avoided using these because that seemed more in the spirit of the project. In reality I suspect rolling your own file reader isn't the best approach.
+
+### VEP API - GRCh37 vs GRCh38
+The prompt specifies using the VEP API available at this endpoint: https://rest.ensembl.org/#VEP. This API was yielding pretty unreliable results (or reliably poor results), as more than 95% of requests returned 400s. 
+
+I did some digging and realized that this may be due to the genome assembly version--the VEP API currently uses GRCh38, but the provided VCF file appears to have been based on the GRCh37 assembly (based on the metadata `'refFile': '/data/ref_genome/human_g1k_v37.fasta'`). I then switched to using a different VEP API version ("https://grch37.rest.ensembl.org"), which dramatically improved request success rate. 
+
+The package currently hard-codes the URL (and therefore the API version used in vep requests), but In a future version I'd probably want to make the package more extensible so you could toggle between assembly versions, and/or find a way to interpret assembly version from the file metadata. 
+
+### VEP query speed
+The current process runs fairly slowly. I was originally using the single-HGVS endpoint and switched to the bulk endpoint to save time (and coupled this to making the reader behave like a generator). 
+
+Despite this, I'm still unsatisfied with the runtime. I opted to leave it as is for the sake of time, but for a longer-term projects I'd want to try a few different approaches to speed things up. One idea would be to switch to using `asynio/aiohttp`, as I've had a lot of success with it in the past for long chains of API calls like this, or alternatively take an offline approach and download the data needed to run this locally.    
