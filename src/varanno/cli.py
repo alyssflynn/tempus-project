@@ -1,5 +1,5 @@
 import argparse
-from .varanno import VCFProcesser
+from .varanno import VCFProcessor
 
 
 def parse_args():
@@ -25,5 +25,5 @@ def parse_args():
 
 def run_annotation():
     args = parse_args()
-    VCFProcesser(args.infile, args.outdest).process()
+    VCFProcessor(args.infile, args.outdest).process()
  
