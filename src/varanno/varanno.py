@@ -50,7 +50,7 @@ class VCFProcessor:
 
         # Generate variant annotations and write to file
         annotation_gen = self.reader.annotation_generator()
-        self.write_record_annotations(annotation_gen, self.annotation_file)
+        self.write_record_annotations(annotation_gen)
 
         # Write metadata to file
         log.info(f"Writing metadata JSON -> {self.metadata_file}")
