@@ -1,4 +1,5 @@
 import requests
+import pydash
 
 HGVSString = str
 
@@ -81,8 +82,8 @@ def find_vep_maf(data: dict, alt: str) -> float:
     Located at "colocated_variants[0].frequences.{alt}.af".
     """
     maf = None
-    if (colocated_variant := first_element(data.get("colocated_variants", []))):
-        if (frequencies := colocated_variant.get("frequencies", {})):
-            maf = frequencies.get(alt, {}).get("af") 
+    for covar in data.get("colocated_variants", []):
+        if (maf := pydash.get(covar, f"frequencies.{alt}.af")):
+            return maf
 
     return maf
