@@ -1,9 +1,8 @@
-
 import os
 import json
 
 
-def makefile(filename):
+def makefile(filename: str):
     """Create file, including parent dirs if nonexistant."""
     os.makedirs(os.path.dirname(filename), exist_ok=True)
 
@@ -22,4 +21,3 @@ def write_logs(messages: list, outfile: str):
 
     with open(outfile, "wt") as fle:
         fle.writelines(messages)
-

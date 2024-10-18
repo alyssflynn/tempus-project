@@ -6,7 +6,7 @@ from varanno.vcf import Reader, ReaderError, Record
 BASE_DIR = Path(__file__).resolve().parent.parent
 VCF_FILE = BASE_DIR.joinpath("data", "test_vcf_data.txt")
 NON_VCF_FILE = BASE_DIR.joinpath("tests", "fixtures", "not_a_vcf_file.txt")
-META_INIT = {k: [] for k in ('INFO', 'FILTER', 'FORMAT', 'ALT')}
+META_INIT: dict[str, list] = {k: [] for k in ('INFO', 'FILTER', 'FORMAT', 'ALT')}
 
 
 @pytest.fixture

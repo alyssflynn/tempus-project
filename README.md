@@ -31,6 +31,12 @@ This project uses pytest. Use this command to run all varanno tests:
 $ pytest
 ```
 
+### Other commands
+
+run linter: `$ ruff format src/ --diff`
+
+run mypy: `$ mypy src/`
+
 ## Usage
 
 ### Run from console
