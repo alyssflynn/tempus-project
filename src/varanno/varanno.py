@@ -38,13 +38,13 @@ class VCFProcessor:
         self.metadata_file = os.path.join(self.outdir, 'metadata.json')
         self.error_file = os.path.join(self.outdir, 'errors.log')
         self.log_file = os.path.join(self.outdir, 'tmp.log')
-        log.addHandler(logging.FileHandler(filename=self.log_file))
 
     def process(self):
         self.validate_input_file()
 
         # Ensure output dir exists, override if allowed
         os.makedirs(self.outdir, exist_ok=self.allow_overrides)
+        log.addHandler(logging.FileHandler(filename=self.log_file))
 
         log.info(f"Annotating VCF! {self.infile} -> {self.outdir}")
         self.reader = Reader(self.infile)
