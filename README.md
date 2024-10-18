@@ -1,12 +1,14 @@
 # Tempus-Project (varanno)
 
-Varanno is a prototype variant annotation tool written in python. This was developed for a take home interview project with Tempus AI. 
+Varanno is a prototype variant annotation tool written in python. This was developed for a take home interview project with Tempus AI. It uses a streaming pattern to ingest and process the data in order to minimize memory usage.
 
 A CSV containing variant annotations for the provided VCF file is located [here](/annotation_results/annotations.csv).
 
 [See project notes below!](#notes)
 
 ## Getting started
+
+**This package requires python version 3.10.0 or greater!** Please verify your system meets this requirement with: `python3 --version`
 
 Clone the project and cd into the project directory.
 
