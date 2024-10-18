@@ -32,9 +32,6 @@ class VCFProcessor:
         self.infile = infile
         self.outdir = outdir
         self.allow_overrides = allow_overrides
-        
-        # Ensure output dir exists, override if allowed
-        os.makedirs(self.outdir, exist_ok=self.allow_overrides)
 
         # Set output file paths
         self.annotation_file = os.path.join(self.outdir, 'annotations.csv')
@@ -45,6 +42,9 @@ class VCFProcessor:
 
     def process(self):
         self.validate_input_file()
+
+        # Ensure output dir exists, override if allowed
+        os.makedirs(self.outdir, exist_ok=self.allow_overrides)
 
         log.info(f"Annotating VCF! {self.infile} -> {self.outdir}")
         self.reader = Reader(self.infile)
