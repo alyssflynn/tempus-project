@@ -1,6 +1,7 @@
 from dataclasses import dataclass
 from .allele import variant_type, parse_genotype
-from .utils import cast_float, parse_record_info, parse_format_sample
+from .utils import cast_float
+from .parse import parse_record_info, parse_format_sample
 from .vep import (
     batch_vep_hgvs, hgvs_string, vep_api_hgvs_get,
     find_vep_gene_id, find_vep_maf, find_vep_allele_string, 

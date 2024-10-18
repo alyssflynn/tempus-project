@@ -1,7 +1,7 @@
 import re
 import logging
 from .record import Record, annotate_batch
-from .utils import VCF_META_KEYVAL, VCF_META_STRUCT
+from .parse import VCF_META_KEYVAL, VCF_META_STRUCT
 
 
 log = logging.getLogger(__name__)
@@ -104,12 +104,17 @@ class Reader:
         
     def annotation_generator(self, batch_size: int = 50):
         """Yield batches of records annotations from the .read() record generator."""
+        log.info(f"Annotating records: Batch size {batch_size}")
+
         batch = []
+        batch_no = 1
         for item in self.read():
             batch.append(item)
             if len(batch) == batch_size:
                 yield from annotate_batch(batch)
+                log.info(f"Successfully processed batch #{batch_no}")
                 batch = []
+                batch_no += 1
                 
         # Yield any remaining items in the final batch
         if batch:
