@@ -45,6 +45,7 @@ class Reader:
         if not self.infile:
             raise ReaderError("Input file missing")
 
+        log.info(f"Reading VCF file: {self.infile}")
         with open(self.infile, "r") as fle:
             for i, line in enumerate(fle):
                 line_no = i + 1
