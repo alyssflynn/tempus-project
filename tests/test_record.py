@@ -76,7 +76,6 @@ def test_annotation_factory(record, vep_hgvs_response_data):
     )
 
 
-# @patch("varanno.record.")
 @patch("varanno.vep.batch_vep_hgvs", vep_hgvs_response)
 def test_annotate_batch(record):
     records = [record, record]
