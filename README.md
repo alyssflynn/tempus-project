@@ -103,3 +103,6 @@ The package currently hard-codes the URL (and therefore the API version used in 
 The current process runs fairly slowly. I was originally using the single-HGVS endpoint and switched to the bulk endpoint to save time (and coupled this to making the reader behave like a generator). 
 
 Despite this, I'm still unsatisfied with the runtime. I opted to leave it as is for the sake of time, but for a longer-term projects I'd want to try a few different approaches to speed things up. One idea would be to switch to using `asynio/aiohttp`, as I've had a lot of success with it in the past for long chains of API calls like this, or alternatively take an offline approach and download the data needed to run this locally.    
+
+## Batch size
+The current batch size is 50 by default, but this can be modified in code. The VEP API specs say that this value can be increased up to 300, although higher batch size may not necessarily mean faster runtime as VEP API request latency seems to scale noticeably with batch size. An interesting next step would be to benchmark various batch sizes and optimize for the best runtime.  
