@@ -65,11 +65,11 @@ def test_find_vep_maf(vep_hgvs_response_data):
 
 def test_realign_hgvs_inputs_outputs(hgvs_response_missing_result_output):
     hgvs_notations = [
-        "1:g.1246004A>G",
+        "1:g.1246004A>G", 
         "1:g.91859795_91859802TATGTGAdelinsCATGTGA,CATGTGG",
-        "1:g.1647722_1647731GCTGTGACAdelinsTCTAGGATG"
+        "1:g.1647983_1647991TGGCTTACdelinsAGGCTTAT"
     ]
     result = list(realign_hgvs_inputs_outputs(hgvs_response_missing_result_output, hgvs_notations))
     assert result[0]["input"] == "1:g.1246004A>G"
     assert result[1]["error"] == "No data returned"
-    assert result[2]["input"] == "1:g.1647722_1647731GCTGTGACAdelinsTCTAGGATG"
+    assert result[2]["input"] == "1:g.1647983_1647991TGGCTTACdelinsAGGCTTAT"

@@ -13,6 +13,7 @@ from .vep import (
     find_vep_maf,
     find_vep_allele_string,
     find_vep_variant_effect,
+    realign_hgvs_inputs_outputs,
 )
 
 
@@ -139,6 +140,24 @@ def annotation_factory(record: Record, vep_data: dict | None = None):
 
 
 def annotate_batch(records: list[Record]):
+    """Generates annotations for a batch of VCF records.
+
+    Realigns outputs to appropriate inputs if the VEP API response
+    contains fewer items than requested (it appears to filter out
+    queries it can't process).
+    """
     hgvs_strings = [rec.hgvs for rec in records]
-    for record, result in zip(records, batch_vep_hgvs(hgvs_strings)):
+    hgvs_results = batch_vep_hgvs(hgvs_strings)
+
+    if len(hgvs_results) != len(hgvs_strings):
+        log.warning(
+            "VEP API result length does not match input length!",
+            extra={
+                "num_hgvs_notations": len(hgvs_strings),
+                "num_results": len(hgvs_results),
+            },
+        )
+        hgvs_results = list(realign_hgvs_inputs_outputs(hgvs_results, hgvs_strings))
+
+    for record, result in zip(records, hgvs_results):
         yield annotation_factory(record, result)
