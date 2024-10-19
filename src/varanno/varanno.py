@@ -7,21 +7,15 @@ from .fileio import write_metadata_json, write_logs
 from .record import VariantAnnotation
 from .vcf import Reader, Record
 
-
-__all__ = [
-    "VCFProcessor",
-    "Reader",
-    "Record",
-    "VariantAnnotation"
-]
+__all__ = ["VCFProcessor", "Reader", "Record", "VariantAnnotation"]
 
 stdout_handler = logging.StreamHandler(stream=sys.stdout)
 handlers = [stdout_handler]
 
 logging.basicConfig(
-    level=logging.DEBUG, 
-    format='[%(asctime)s] {%(filename)s:%(lineno)d} %(levelname)s - %(message)s',
-    handlers=handlers
+    level=logging.DEBUG,
+    format="[%(asctime)s] {%(filename)s:%(lineno)d} %(levelname)s - %(message)s",
+    handlers=handlers,
 )
 
 log = logging.getLogger(__name__)
@@ -34,17 +28,17 @@ class VCFProcessor:
         self.allow_overrides = allow_overrides
 
         # Set output file paths
-        self.annotation_file = os.path.join(self.outdir, 'annotations.csv')
-        self.metadata_file = os.path.join(self.outdir, 'metadata.json')
-        self.error_file = os.path.join(self.outdir, 'errors.log')
-        self.log_file = os.path.join(self.outdir, 'tmp.log')
+        self.annotation_file = os.path.join(self.outdir, "annotations.csv")
+        self.metadata_file = os.path.join(self.outdir, "metadata.json")
+        self.error_file = os.path.join(self.outdir, "errors.log")
+        self.log_file = os.path.join(self.outdir, "tmp.log")
 
     def process(self):
         self.validate_input_file()
 
         # Ensure output dir exists, override if allowed
         os.makedirs(self.outdir, exist_ok=self.allow_overrides)
-        log.addHandler(logging.FileHandler(filename=self.log_file))
+        log.root.addHandler(logging.FileHandler(filename=self.log_file))
 
         log.info(f"Annotating VCF! {self.infile} -> {self.outdir}")
         self.reader = Reader(self.infile)
@@ -59,13 +53,15 @@ class VCFProcessor:
 
         # Write errors to file
         if self.reader.errors:
-            log.warning(f"Logging {len(self.reader.errors)} errors -> {self.error_file}")
+            log.warning(
+                f"Logging {len(self.reader.errors)} errors -> {self.error_file}"
+            )
             write_logs([err.logstr() for err in self.reader.errors], self.error_file)
-        
+
     def validate_input_file(self):
         if not os.path.exists(self.infile):
             raise FileExistsError("Input file not found")
-        
+
     def write_record_annotations(self, annotation_gen):
         log.info(f"Generating record annotations -> {self.annotation_file}")
 

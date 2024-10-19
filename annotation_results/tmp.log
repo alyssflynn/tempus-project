@@ -1,3 +1,784 @@
-Annotating VCF! data/test_vcf_data.txt -> data/sample_output3
-Generating record annotations -> data/sample_output3/annotations.csv
-Writing metadata JSON -> data/sample_output3/metadata.json
+Annotating VCF! data/test_vcf_data.txt -> annotation_results
+Generating record annotations -> annotation_results/annotations.csv
+Annotating records: Batch size 50
+Reading VCF file: data/test_vcf_data.txt
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 182865
+VEP API returned no data for HGVS: 1:g.6219287_6219294TCACACAdelinsTCACA,T
+Failed to parse genotype for record (pos: 6219287, GT:1/2), setting to 'unknown'
+Successfully processed batch #1
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 134238
+Successfully processed batch #2
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 159641
+Successfully processed batch #3
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 173294
+Successfully processed batch #4
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 200833
+Successfully processed batch #5
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 120681
+Successfully processed batch #6
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 152878
+Successfully processed batch #7
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 149046
+Successfully processed batch #8
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 141427
+VEP API returned no data for HGVS: 1:g.91859795_91859802TATGTGAdelinsCATGTGA,CATGTGG
+Failed to parse genotype for record (pos: 91859795, GT:1/2), setting to 'unknown'
+Successfully processed batch #9
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 150042
+Successfully processed batch #10
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 130594
+Successfully processed batch #11
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 204631
+Successfully processed batch #12
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 149579
+Successfully processed batch #13
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 143388
+Successfully processed batch #14
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 180516
+VEP API returned no data for HGVS: 1:g.154516571_154516579TATGCACGdelinsCATGCACA,CATGCACG
+Failed to parse genotype for record (pos: 154516571, GT:1/2), setting to 'unknown'
+Successfully processed batch #15
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 135504
+VEP API returned no data for HGVS: 1:g.156914240_156914245CCATTdelinsC,CCATTCATT
+Failed to parse genotype for record (pos: 156914240, GT:1/2), setting to 'unknown'
+Successfully processed batch #16
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 166953
+Successfully processed batch #17
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 117905
+Successfully processed batch #18
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 166714
+Successfully processed batch #19
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 134148
+Successfully processed batch #20
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 135969
+VEP API returned no data for HGVS: 1:g.182429295_182429300CTGTGdelinsC,CTG
+Failed to parse genotype for record (pos: 182429295, GT:1/2), setting to 'unknown'
+Successfully processed batch #21
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 135715
+Successfully processed batch #22
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 168709
+Successfully processed batch #23
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 135778
+Successfully processed batch #24
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 108518
+Successfully processed batch #25
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 148793
+Successfully processed batch #26
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 133048
+VEP API returned no data for HGVS: 1:g.235543476_235543499TTGTGTGTGTGTGTGTGTGTGTGdelinsT,TTGTGTGTG
+Failed to parse genotype for record (pos: 235543476, GT:1/2), setting to 'unknown'
+Successfully processed batch #27
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 117155
+Successfully processed batch #28
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 137684
+Successfully processed batch #29
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 119226
+Successfully processed batch #30
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 130274
+Successfully processed batch #31
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 176846
+Successfully processed batch #32
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 125732
+Successfully processed batch #33
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 154274
+Successfully processed batch #34
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 151200
+Successfully processed batch #35
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 116789
+Successfully processed batch #36
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 125412
+Successfully processed batch #37
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 134047
+Successfully processed batch #38
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 83082
+Successfully processed batch #39
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 140575
+Successfully processed batch #40
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 133453
+Successfully processed batch #41
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 158155
+Successfully processed batch #42
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 181836
+Successfully processed batch #43
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 128872
+Successfully processed batch #44
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 180362
+Successfully processed batch #45
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 167238
+Successfully processed batch #46
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 170529
+Successfully processed batch #47
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 176673
+Successfully processed batch #48
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 163076
+Successfully processed batch #49
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 143507
+Successfully processed batch #50
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 139976
+Successfully processed batch #51
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 181403
+Successfully processed batch #52
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 124218
+VEP API returned no data for HGVS: 3:g.64527465C>A,T
+Failed to parse genotype for record (pos: 64527465, GT:1/2), setting to 'unknown'
+Successfully processed batch #53
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 111479
+Successfully processed batch #54
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 126944
+Successfully processed batch #55
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 135543
+VEP API returned no data for HGVS: 1:g.113376110_113376114TTGCdelinsT,TTGCTGCTGC
+Failed to parse genotype for record (pos: 113376110, GT:2/1), setting to 'unknown'
+Successfully processed batch #56
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 123882
+Successfully processed batch #57
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 155427
+Successfully processed batch #58
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 136796
+Successfully processed batch #59
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 163409
+Successfully processed batch #60
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 187656
+Successfully processed batch #61
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 197933
+Successfully processed batch #62
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 130061
+Successfully processed batch #63
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 146232
+Successfully processed batch #64
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 139564
+Successfully processed batch #65
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 99082
+Successfully processed batch #66
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 116775
+Successfully processed batch #67
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 153842
+VEP API returned no data for HGVS: 4:g.87024228C>CTGTGTA,CTGTGTGTGTG
+Failed to parse genotype for record (pos: 87024228, GT:1/2), setting to 'unknown'
+Successfully processed batch #68
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 130565
+Successfully processed batch #69
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 124644
+Successfully processed batch #70
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 126060
+Successfully processed batch #71
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 116922
+VEP API returned no data for HGVS: 1:g.153884092_153884101GGTGTGTGTdelinsG,GGTGTGTGTGT
+Failed to parse genotype for record (pos: 153884092, GT:1/2), setting to 'unknown'
+Successfully processed batch #72
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 117789
+Successfully processed batch #73
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 145175
+Successfully processed batch #74
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 139203
+VEP API returned no data for HGVS: 1:g.190394938_190394945CAAGAAGdelinsCAAG,C
+Failed to parse genotype for record (pos: 190394938, GT:1/2), setting to 'unknown'
+Successfully processed batch #75
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 142430
+Successfully processed batch #76
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 136674
+Successfully processed batch #77
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 168981
+Successfully processed batch #78
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 162504
+Successfully processed batch #79
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 157459
+Successfully processed batch #80
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 158733
+Successfully processed batch #81
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 177000
+Successfully processed batch #82
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 147683
+Successfully processed batch #83
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 125704
+Successfully processed batch #84
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 163216
+Successfully processed batch #85
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 115954
+Successfully processed batch #86
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 138484
+Successfully processed batch #87
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 190635
+Successfully processed batch #88
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 137405
+VEP API returned no data for HGVS: 1:g.35477025_35477033CTTCTTTAdelinsGTTCTTTA,GTTCTTTG
+Failed to parse genotype for record (pos: 35477025, GT:1/2), setting to 'unknown'
+Successfully processed batch #89
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 119368
+Successfully processed batch #90
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 99455
+VEP API returned no data for HGVS: 1:g.65016977_65016982TGAGAdelinsT,TGA
+Failed to parse genotype for record (pos: 65016977, GT:1/2), setting to 'unknown'
+Successfully processed batch #91
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 102310
+Successfully processed batch #92
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 112993
+Successfully processed batch #93
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 126134
+VEP API returned no data for HGVS: 1:g.109767930_109767932GCdelinsTC,TT
+Failed to parse genotype for record (pos: 109767930, GT:1/2), setting to 'unknown'
+Successfully processed batch #94
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 125011
+VEP API returned no data for HGVS: 6:g.123592184C>CTG,CTGTG
+Failed to parse genotype for record (pos: 123592184, GT:1/2), setting to 'unknown'
+Successfully processed batch #95
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 168157
+Successfully processed batch #96
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 146762
+Successfully processed batch #97
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 135668
+Successfully processed batch #98
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 127295
+Successfully processed batch #99
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 124591
+Successfully processed batch #100
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 126496
+VEP API returned no data for HGVS: 1:g.57216012_57216021ACATTTATTdelinsGAATTTATC,GCATTTATC
+Failed to parse genotype for record (pos: 57216012, GT:1/2), setting to 'unknown'
+Successfully processed batch #101
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 141200
+Successfully processed batch #102
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 139344
+Successfully processed batch #103
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 175985
+Successfully processed batch #104
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 138804
+Successfully processed batch #105
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 131161
+Successfully processed batch #106
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 86140
+Successfully processed batch #107
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 93700
+Successfully processed batch #108
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 136269
+Successfully processed batch #109
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 157404
+Successfully processed batch #110
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 182054
+Successfully processed batch #111
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 157961
+Successfully processed batch #112
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 138750
+Successfully processed batch #113
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 154418
+Successfully processed batch #114
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 139201
+Successfully processed batch #115
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 112471
+Successfully processed batch #116
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 134724
+VEP API returned no data for HGVS: 1:g.4850421_4850432CCCTTGGGCCAdelinsGCCTTGGGCCA,GCCTTGGGCCG
+Failed to parse genotype for record (pos: 4850421, GT:1/2), setting to 'unknown'
+Successfully processed batch #117
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 124955
+VEP API returned no data for HGVS: 1:g.14775853_14775860ATCTGTGdelinsGTCTGTA,GTCTGTG
+Failed to parse genotype for record (pos: 14775853, GT:1/2), setting to 'unknown'
+Successfully processed batch #118
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 133169
+Successfully processed batch #119
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 144504
+Successfully processed batch #120
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 107010
+Successfully processed batch #121
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 128966
+Successfully processed batch #122
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 106940
+Successfully processed batch #123
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 141208
+Successfully processed batch #124
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 147723
+Successfully processed batch #125
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 116493
+Successfully processed batch #126
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 139368
+VEP API returned no data for HGVS: 1:g.47087608_47087610TGdelinsCA,CG
+Failed to parse genotype for record (pos: 47087608, GT:1/2), setting to 'unknown'
+Successfully processed batch #127
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 127592
+Successfully processed batch #128
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 166690
+Successfully processed batch #129
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 127844
+Successfully processed batch #130
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 153090
+Successfully processed batch #131
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 118421
+Successfully processed batch #132
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 133855
+Successfully processed batch #133
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 121216
+Successfully processed batch #134
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 137533
+Successfully processed batch #135
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 152105
+Successfully processed batch #136
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 179547
+Successfully processed batch #137
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 138571
+Successfully processed batch #138
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 142379
+Successfully processed batch #139
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 149897
+Successfully processed batch #140
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 71833
+Successfully processed batch #141
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 81177
+Successfully processed batch #142
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 175801
+Successfully processed batch #143
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 230292
+VEP API returned no data for HGVS: 1:g.63673603_63673608CTGTGdelinsC,CTG
+Failed to parse genotype for record (pos: 63673603, GT:1/2), setting to 'unknown'
+Successfully processed batch #144
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 164908
+VEP API returned no data for HGVS: 1:g.85979636_85979641CGTGTdelinsC,CGT
+Failed to parse genotype for record (pos: 85979636, GT:1/2), setting to 'unknown'
+Successfully processed batch #145
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 168227
+Successfully processed batch #146
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 146305
+Successfully processed batch #147
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 147964
+Successfully processed batch #148
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 154229
+Successfully processed batch #149
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 131962
+Successfully processed batch #150
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 145994
+Successfully processed batch #151
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 146719
+Successfully processed batch #152
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 148182
+Successfully processed batch #153
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 194791
+Successfully processed batch #154
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 182286
+Successfully processed batch #155
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 161697
+Successfully processed batch #156
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 153806
+Successfully processed batch #157
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 145198
+Successfully processed batch #158
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 181605
+Successfully processed batch #159
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 119125
+Successfully processed batch #160
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 132998
+Successfully processed batch #161
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 127016
+VEP API returned no data for HGVS: 1:g.46108853_46108855TGdelinsCA,CG
+Failed to parse genotype for record (pos: 46108853, GT:1/2), setting to 'unknown'
+Successfully processed batch #162
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 114239
+Successfully processed batch #163
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 96474
+VEP API returned no data for HGVS: 1:g.103705044_103705051AAACCAGdelinsCAACCAA,CAACCAG
+Failed to parse genotype for record (pos: 103705044, GT:1/2), setting to 'unknown'
+Successfully processed batch #164
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 114629
+Successfully processed batch #165
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 171517
+Successfully processed batch #166
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 180465
+Successfully processed batch #167
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 158899
+Successfully processed batch #168
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 161163
+Successfully processed batch #169
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 180442
+Successfully processed batch #170
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 150693
+Successfully processed batch #171
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 161071
+Successfully processed batch #172
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 127465
+Successfully processed batch #173
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 56945
+Successfully processed batch #174
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 115659
+Successfully processed batch #175
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 134413
+Successfully processed batch #176
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 152876
+Successfully processed batch #177
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 167511
+Successfully processed batch #178
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 181390
+Successfully processed batch #179
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 167762
+Successfully processed batch #180
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 135462
+Successfully processed batch #181
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 192740
+Successfully processed batch #182
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 217509
+Successfully processed batch #183
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 157509
+VEP API returned no data for HGVS: 1:g.11214668_11214671AACdelinsAACAC,A
+Failed to parse genotype for record (pos: 11214668, GT:2/1), setting to 'unknown'
+Successfully processed batch #184
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 144868
+Successfully processed batch #185
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 168235
+Successfully processed batch #186
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 161550
+Successfully processed batch #187
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 156489
+VEP API returned no data for HGVS: 1:g.88585145_88585158GTGGATGGATGGAdelinsG,GTGGATGGA
+Failed to parse genotype for record (pos: 88585145, GT:1/2), setting to 'unknown'
+Successfully processed batch #188
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 204794
+Successfully processed batch #189
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 155296
+Successfully processed batch #190
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 176369
+Successfully processed batch #191
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 152169
+VEP API returned no data for HGVS: 1:g.30791503_30791510CCCCCCCdelinsTCCCCCC,TCCCCCG
+Failed to parse genotype for record (pos: 30791503, GT:1/2), setting to 'unknown'
+Successfully processed batch #192
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 200079
+Successfully processed batch #193
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 122970
+VEP API returned no data for HGVS: 1:g.39406409_39406428CCAGCTGCTGTCAGCCTTTdelinsACAGCTGCTGCCAGCCTTC,ACAGCTGCTGTCAGCCTTT
+VEP API returned no data for HGVS: 1:g.39594934_39594936ACdelinsA,ACC
+Failed to parse genotype for record (pos: 39406409, GT:1/2), setting to 'unknown'
+Failed to parse genotype for record (pos: 39594934, GT:1/2), setting to 'unknown'
+Successfully processed batch #194
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 209655
+Successfully processed batch #195
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 153822
+Successfully processed batch #196
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 151007
+VEP API returned no data for HGVS: 1:g.53124546_53124553CGTGTGTdelinsC,CGTGTGTGT
+Failed to parse genotype for record (pos: 53124546, GT:1/2), setting to 'unknown'
+Successfully processed batch #197
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 150655
+Successfully processed batch #198
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 149373
+Successfully processed batch #199
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 171214
+Successfully processed batch #200
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 182446
+Successfully processed batch #201
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 141208
+Successfully processed batch #202
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 121380
+VEP API returned no data for HGVS: 1:g.19119974_19119979GATATdelinsG,GAT
+Failed to parse genotype for record (pos: 19119974, GT:1/2), setting to 'unknown'
+Successfully processed batch #203
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 175423
+VEP API returned no data for HGVS: 1:g.52585071_52585082GACACACACACdelinsGAC,G
+Failed to parse genotype for record (pos: 52585071, GT:1/2), setting to 'unknown'
+Successfully processed batch #204
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 138981
+Successfully processed batch #205
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 165019
+Successfully processed batch #206
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 139628
+Successfully processed batch #207
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 105259
+Successfully processed batch #208
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 135378
+Successfully processed batch #209
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 136313
+Successfully processed batch #210
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 190386
+Successfully processed batch #211
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 157958
+Successfully processed batch #212
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 162808
+Successfully processed batch #213
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 162891
+Successfully processed batch #214
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 173440
+Successfully processed batch #215
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 156462
+Successfully processed batch #216
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 136724
+Successfully processed batch #217
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 111507
+Successfully processed batch #218
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 114430
+Successfully processed batch #219
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 137944
+Successfully processed batch #220
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 119518
+Successfully processed batch #221
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 114766
+Successfully processed batch #222
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 163631
+Successfully processed batch #223
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 137909
+Successfully processed batch #224
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 114575
+Successfully processed batch #225
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 130813
+Successfully processed batch #226
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 91742
+Successfully processed batch #227
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 43392
+Successfully processed batch #228
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 151306
+VEP API returned no data for HGVS: 1:g.1746526_1746542CGAAATGAAATGAAATdelinsC,TGAAATGAAATGAAAT
+Failed to parse genotype for record (pos: 1746526, GT:1/2), setting to 'unknown'
+Successfully processed batch #229
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 117081
+VEP API returned no data for HGVS: 1:g.12848005_12848010TTTCAdelinsT,TTTCATTCA
+Failed to parse genotype for record (pos: 12848005, GT:1/2), setting to 'unknown'
+Successfully processed batch #230
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 108217
+Successfully processed batch #231
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 102077
+VEP API returned no data for HGVS: 1:g.52895579_52895584GGTGTdelinsG,GGT
+VEP API returned no data for HGVS: 1:g.56295958_56295963ATGTGdelinsA,ATG
+Failed to parse genotype for record (pos: 52895579, GT:1/2), setting to 'unknown'
+Failed to parse genotype for record (pos: 56295958, GT:1/2), setting to 'unknown'
+Successfully processed batch #232
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 106771
+Successfully processed batch #233
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 116930
+VEP API returned no data for HGVS: 1:g.122575672_122575677AACACdelinsA,AAC
+Failed to parse genotype for record (pos: 122575672, GT:1/2), setting to 'unknown'
+Successfully processed batch #234
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 113580
+Successfully processed batch #235
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 48444
+Writing metadata JSON -> annotation_results/metadata.json

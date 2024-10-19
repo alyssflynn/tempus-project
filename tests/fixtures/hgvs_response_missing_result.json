@@ -1,0 +1,999 @@
+[
+    {
+        "allele_string": "A/G",
+        "start": 1246004,
+        "seq_region_name": "1",
+        "id": "1:g.1246004A>G",
+        "most_severe_consequence": "splice_polypyrimidine_tract_variant",
+        "end": 1246004,
+        "transcript_consequences": [
+            {
+                "distance": 976,
+                "impact": "MODIFIER",
+                "consequence_terms": [
+                    "downstream_gene_variant"
+                ],
+                "biotype": "retained_intron",
+                "gene_symbol": "CPSF3L",
+                "strand": -1,
+                "transcript_id": "ENST00000323275",
+                "hgnc_id": 26052,
+                "variant_allele": "G",
+                "gene_symbol_source": "HGNC",
+                "gene_id": "ENSG00000127054"
+            },
+            {
+                "transcript_id": "ENST00000353662",
+                "strand": -1,
+                "gene_symbol": "ACAP3",
+                "gene_symbol_source": "HGNC",
+                "gene_id": "ENSG00000131584",
+                "hgnc_id": 16754,
+                "variant_allele": "G",
+                "distance": 2735,
+                "consequence_terms": [
+                    "upstream_gene_variant"
+                ],
+                "biotype": "protein_coding",
+                "impact": "MODIFIER"
+            },
+            {
+                "gene_id": "ENSG00000131584",
+                "gene_symbol_source": "HGNC",
+                "hgnc_id": 16754,
+                "variant_allele": "G",
+                "strand": -1,
+                "transcript_id": "ENST00000354700",
+                "gene_symbol": "ACAP3",
+                "biotype": "protein_coding",
+                "consequence_terms": [
+                    "upstream_gene_variant"
+                ],
+                "impact": "MODIFIER",
+                "distance": 2606
+            },
+            {
+                "consequence_terms": [
+                    "upstream_gene_variant"
+                ],
+                "biotype": "nonsense_mediated_decay",
+                "impact": "MODIFIER",
+                "distance": 2803,
+                "gene_symbol_source": "HGNC",
+                "gene_id": "ENSG00000131584",
+                "variant_allele": "G",
+                "hgnc_id": 16754,
+                "strand": -1,
+                "transcript_id": "ENST00000354980",
+                "gene_symbol": "ACAP3"
+            },
+            {
+                "biotype": "protein_coding",
+                "consequence_terms": [
+                    "splice_polypyrimidine_tract_variant",
+                    "intron_variant"
+                ],
+                "impact": "LOW",
+                "gene_id": "ENSG00000169972",
+                "gene_symbol_source": "HGNC",
+                "variant_allele": "G",
+                "hgnc_id": 26914,
+                "transcript_id": "ENST00000379031",
+                "strand": 1,
+                "gene_symbol": "PUSL1"
+            },
+            {
+                "consequence_terms": [
+                    "downstream_gene_variant"
+                ],
+                "biotype": "protein_coding",
+                "impact": "MODIFIER",
+                "distance": 977,
+                "gene_symbol_source": "HGNC",
+                "gene_id": "ENSG00000127054",
+                "hgnc_id": 26052,
+                "variant_allele": "G",
+                "strand": -1,
+                "transcript_id": "ENST00000411962",
+                "gene_symbol": "CPSF3L"
+            },
+            {
+                "distance": 982,
+                "impact": "MODIFIER",
+                "biotype": "protein_coding",
+                "consequence_terms": [
+                    "downstream_gene_variant"
+                ],
+                "gene_symbol": "CPSF3L",
+                "transcript_id": "ENST00000419704",
+                "strand": -1,
+                "variant_allele": "G",
+                "hgnc_id": 26052,
+                "gene_id": "ENSG00000127054",
+                "gene_symbol_source": "HGNC"
+            },
+            {
+                "biotype": "protein_coding",
+                "consequence_terms": [
+                    "downstream_gene_variant"
+                ],
+                "impact": "MODIFIER",
+                "distance": 982,
+                "gene_id": "ENSG00000127054",
+                "gene_symbol_source": "HGNC",
+                "variant_allele": "G",
+                "hgnc_id": 26052,
+                "strand": -1,
+                "transcript_id": "ENST00000421495",
+                "gene_symbol": "CPSF3L"
+            },
+            {
+                "impact": "MODIFIER",
+                "biotype": "nonsense_mediated_decay",
+                "consequence_terms": [
+                    "downstream_gene_variant"
+                ],
+                "distance": 4254,
+                "variant_allele": "G",
+                "hgnc_id": 26052,
+                "gene_id": "ENSG00000127054",
+                "gene_symbol_source": "HGNC",
+                "gene_symbol": "CPSF3L",
+                "strand": -1,
+                "transcript_id": "ENST00000430786"
+            },
+            {
+                "gene_symbol_source": "HGNC",
+                "gene_id": "ENSG00000127054",
+                "variant_allele": "G",
+                "flags": [
+                    "cds_end_NF"
+                ],
+                "hgnc_id": 26052,
+                "transcript_id": "ENST00000434694",
+                "strand": -1,
+                "gene_symbol": "CPSF3L",
+                "consequence_terms": [
+                    "downstream_gene_variant"
+                ],
+                "biotype": "protein_coding",
+                "impact": "MODIFIER",
+                "distance": 3121
+            },
+            {
+                "hgnc_id": 26052,
+                "variant_allele": "G",
+                "gene_symbol_source": "HGNC",
+                "gene_id": "ENSG00000127054",
+                "gene_symbol": "CPSF3L",
+                "transcript_id": "ENST00000435064",
+                "strand": -1,
+                "impact": "MODIFIER",
+                "consequence_terms": [
+                    "downstream_gene_variant"
+                ],
+                "biotype": "protein_coding",
+                "distance": 973
+            },
+            {
+                "distance": 2806,
+                "impact": "MODIFIER",
+                "consequence_terms": [
+                    "upstream_gene_variant"
+                ],
+                "biotype": "processed_transcript",
+                "gene_symbol": "ACAP3",
+                "transcript_id": "ENST00000438966",
+                "strand": -1,
+                "hgnc_id": 16754,
+                "variant_allele": "G",
+                "gene_symbol_source": "HGNC",
+                "gene_id": "ENSG00000131584"
+            },
+            {
+                "strand": -1,
+                "transcript_id": "ENST00000450926",
+                "gene_symbol": "CPSF3L",
+                "gene_id": "ENSG00000127054",
+                "gene_symbol_source": "HGNC",
+                "variant_allele": "G",
+                "hgnc_id": 26052,
+                "distance": 1195,
+                "biotype": "protein_coding",
+                "consequence_terms": [
+                    "downstream_gene_variant"
+                ],
+                "impact": "MODIFIER"
+            },
+            {
+                "gene_symbol": "CPSF3L",
+                "strand": -1,
+                "transcript_id": "ENST00000458452",
+                "variant_allele": "G",
+                "hgnc_id": 26052,
+                "gene_symbol_source": "HGNC",
+                "gene_id": "ENSG00000127054",
+                "distance": 982,
+                "impact": "MODIFIER",
+                "consequence_terms": [
+                    "downstream_gene_variant"
+                ],
+                "biotype": "nonsense_mediated_decay"
+            },
+            {
+                "consequence_terms": [
+                    "downstream_gene_variant"
+                ],
+                "biotype": "retained_intron",
+                "impact": "MODIFIER",
+                "distance": 1636,
+                "gene_symbol_source": "HGNC",
+                "gene_id": "ENSG00000127054",
+                "hgnc_id": 26052,
+                "variant_allele": "G",
+                "transcript_id": "ENST00000461514",
+                "strand": -1,
+                "gene_symbol": "CPSF3L"
+            },
+            {
+                "gene_symbol": "CPSF3L",
+                "transcript_id": "ENST00000462432",
+                "strand": -1,
+                "variant_allele": "G",
+                "hgnc_id": 26052,
+                "gene_symbol_source": "HGNC",
+                "gene_id": "ENSG00000127054",
+                "distance": 978,
+                "impact": "MODIFIER",
+                "consequence_terms": [
+                    "downstream_gene_variant"
+                ],
+                "biotype": "processed_transcript"
+            },
+            {
+                "gene_symbol_source": "HGNC",
+                "gene_id": "ENSG00000169972",
+                "variant_allele": "G",
+                "hgnc_id": 26914,
+                "transcript_id": "ENST00000463758",
+                "strand": 1,
+                "gene_symbol": "PUSL1",
+                "consequence_terms": [
+                    "downstream_gene_variant"
+                ],
+                "biotype": "retained_intron",
+                "impact": "MODIFIER",
+                "distance": 784
+            },
+            {
+                "distance": 2922,
+                "impact": "MODIFIER",
+                "consequence_terms": [
+                    "downstream_gene_variant"
+                ],
+                "biotype": "retained_intron",
+                "gene_symbol": "CPSF3L",
+                "strand": -1,
+                "transcript_id": "ENST00000467408",
+                "hgnc_id": 26052,
+                "variant_allele": "G",
+                "gene_symbol_source": "HGNC",
+                "gene_id": "ENSG00000127054"
+            },
+            {
+                "gene_symbol": "PUSL1",
+                "transcript_id": "ENST00000467712",
+                "strand": 1,
+                "variant_allele": "G",
+                "hgnc_id": 26914,
+                "flags": [
+                    "cds_end_NF"
+                ],
+                "gene_id": "ENSG00000169972",
+                "gene_symbol_source": "HGNC",
+                "impact": "LOW",
+                "biotype": "protein_coding",
+                "consequence_terms": [
+                    "splice_polypyrimidine_tract_variant",
+                    "intron_variant"
+                ]
+            },
+            {
+                "impact": "MODIFIER",
+                "consequence_terms": [
+                    "downstream_gene_variant"
+                ],
+                "biotype": "retained_intron",
+                "distance": 961,
+                "variant_allele": "G",
+                "hgnc_id": 26052,
+                "gene_symbol_source": "HGNC",
+                "gene_id": "ENSG00000127054",
+                "gene_symbol": "CPSF3L",
+                "strand": -1,
+                "transcript_id": "ENST00000470030"
+            },
+            {
+                "gene_symbol": "PUSL1",
+                "transcript_id": "ENST00000470520",
+                "strand": 1,
+                "variant_allele": "G",
+                "hgnc_id": 26914,
+                "gene_id": "ENSG00000169972",
+                "gene_symbol_source": "HGNC",
+                "impact": "LOW",
+                "biotype": "processed_transcript",
+                "consequence_terms": [
+                    "splice_polypyrimidine_tract_variant",
+                    "intron_variant",
+                    "non_coding_transcript_variant"
+                ]
+            },
+            {
+                "distance": 1015,
+                "impact": "MODIFIER",
+                "biotype": "retained_intron",
+                "consequence_terms": [
+                    "upstream_gene_variant"
+                ],
+                "gene_symbol": "ACAP3",
+                "transcript_id": "ENST00000472541",
+                "strand": -1,
+                "variant_allele": "G",
+                "hgnc_id": 16754,
+                "gene_id": "ENSG00000131584",
+                "gene_symbol_source": "HGNC"
+            },
+            {
+                "transcript_id": "ENST00000478641",
+                "strand": -1,
+                "gene_symbol": "CPSF3L",
+                "gene_id": "ENSG00000127054",
+                "gene_symbol_source": "HGNC",
+                "variant_allele": "G",
+                "hgnc_id": 26052,
+                "distance": 982,
+                "biotype": "retained_intron",
+                "consequence_terms": [
+                    "downstream_gene_variant"
+                ],
+                "impact": "MODIFIER"
+            },
+            {
+                "impact": "MODIFIER",
+                "consequence_terms": [
+                    "upstream_gene_variant"
+                ],
+                "biotype": "retained_intron",
+                "distance": 2794,
+                "variant_allele": "G",
+                "hgnc_id": 16754,
+                "gene_symbol_source": "HGNC",
+                "gene_id": "ENSG00000131584",
+                "gene_symbol": "ACAP3",
+                "transcript_id": "ENST00000479108",
+                "strand": -1
+            },
+            {
+                "consequence_terms": [
+                    "downstream_gene_variant"
+                ],
+                "biotype": "retained_intron",
+                "impact": "MODIFIER",
+                "distance": 1456,
+                "gene_symbol_source": "HGNC",
+                "gene_id": "ENSG00000127054",
+                "variant_allele": "G",
+                "hgnc_id": 26052,
+                "transcript_id": "ENST00000485710",
+                "strand": -1,
+                "gene_symbol": "CPSF3L"
+            },
+            {
+                "distance": 3789,
+                "impact": "MODIFIER",
+                "consequence_terms": [
+                    "downstream_gene_variant"
+                ],
+                "biotype": "retained_intron",
+                "gene_symbol": "CPSF3L",
+                "strand": -1,
+                "transcript_id": "ENST00000488042",
+                "variant_allele": "G",
+                "hgnc_id": 26052,
+                "gene_symbol_source": "HGNC",
+                "gene_id": "ENSG00000127054"
+            },
+            {
+                "gene_symbol": "ACAP3",
+                "strand": -1,
+                "transcript_id": "ENST00000492936",
+                "hgnc_id": 16754,
+                "variant_allele": "G",
+                "gene_id": "ENSG00000131584",
+                "gene_symbol_source": "HGNC",
+                "distance": 4695,
+                "impact": "MODIFIER",
+                "biotype": "retained_intron",
+                "consequence_terms": [
+                    "upstream_gene_variant"
+                ]
+            },
+            {
+                "hgnc_id": 26914,
+                "variant_allele": "G",
+                "gene_symbol_source": "HGNC",
+                "gene_id": "ENSG00000169972",
+                "cdna_start": 989,
+                "gene_symbol": "PUSL1",
+                "cdna_end": 989,
+                "strand": 1,
+                "transcript_id": "ENST00000493657",
+                "impact": "MODIFIER",
+                "consequence_terms": [
+                    "non_coding_transcript_exon_variant"
+                ],
+                "biotype": "retained_intron"
+            },
+            {
+                "gene_symbol": "CPSF3L",
+                "strand": -1,
+                "transcript_id": "ENST00000497304",
+                "hgnc_id": 26052,
+                "variant_allele": "G",
+                "gene_symbol_source": "HGNC",
+                "gene_id": "ENSG00000127054",
+                "distance": 974,
+                "impact": "MODIFIER",
+                "consequence_terms": [
+                    "downstream_gene_variant"
+                ],
+                "biotype": "retained_intron"
+            },
+            {
+                "gene_id": "ENSG00000127054",
+                "gene_symbol_source": "HGNC",
+                "hgnc_id": 26052,
+                "variant_allele": "G",
+                "transcript_id": "ENST00000525164",
+                "strand": -1,
+                "gene_symbol": "CPSF3L",
+                "biotype": "retained_intron",
+                "consequence_terms": [
+                    "downstream_gene_variant"
+                ],
+                "impact": "MODIFIER",
+                "distance": 1641
+            },
+            {
+                "gene_symbol": "CPSF3L",
+                "transcript_id": "ENST00000525603",
+                "strand": -1,
+                "variant_allele": "G",
+                "hgnc_id": 26052,
+                "gene_id": "ENSG00000127054",
+                "gene_symbol_source": "HGNC",
+                "distance": 4936,
+                "impact": "MODIFIER",
+                "biotype": "retained_intron",
+                "consequence_terms": [
+                    "downstream_gene_variant"
+                ]
+            },
+            {
+                "gene_symbol": "CPSF3L",
+                "transcript_id": "ENST00000525769",
+                "strand": -1,
+                "variant_allele": "G",
+                "hgnc_id": 26052,
+                "gene_id": "ENSG00000127054",
+                "gene_symbol_source": "HGNC",
+                "distance": 1662,
+                "impact": "MODIFIER",
+                "biotype": "retained_intron",
+                "consequence_terms": [
+                    "downstream_gene_variant"
+                ]
+            },
+            {
+                "variant_allele": "G",
+                "hgnc_id": 26052,
+                "gene_symbol_source": "HGNC",
+                "gene_id": "ENSG00000127054",
+                "gene_symbol": "CPSF3L",
+                "strand": -1,
+                "transcript_id": "ENST00000526113",
+                "impact": "MODIFIER",
+                "consequence_terms": [
+                    "downstream_gene_variant"
+                ],
+                "biotype": "retained_intron",
+                "distance": 4380
+            },
+            {
+                "gene_symbol": "CPSF3L",
+                "strand": -1,
+                "transcript_id": "ENST00000526332",
+                "variant_allele": "G",
+                "flags": [
+                    "cds_end_NF"
+                ],
+                "hgnc_id": 26052,
+                "gene_symbol_source": "HGNC",
+                "gene_id": "ENSG00000127054",
+                "distance": 4203,
+                "impact": "MODIFIER",
+                "consequence_terms": [
+                    "downstream_gene_variant"
+                ],
+                "biotype": "protein_coding"
+            },
+            {
+                "impact": "MODIFIER",
+                "consequence_terms": [
+                    "downstream_gene_variant"
+                ],
+                "biotype": "nonsense_mediated_decay",
+                "distance": 4202,
+                "variant_allele": "G",
+                "hgnc_id": 26052,
+                "gene_symbol_source": "HGNC",
+                "gene_id": "ENSG00000127054",
+                "gene_symbol": "CPSF3L",
+                "transcript_id": "ENST00000526797",
+                "strand": -1
+            },
+            {
+                "variant_allele": "G",
+                "hgnc_id": 26052,
+                "gene_id": "ENSG00000127054",
+                "gene_symbol_source": "HGNC",
+                "gene_symbol": "CPSF3L",
+                "strand": -1,
+                "transcript_id": "ENST00000526904",
+                "impact": "MODIFIER",
+                "biotype": "retained_intron",
+                "consequence_terms": [
+                    "downstream_gene_variant"
+                ],
+                "distance": 4522
+            },
+            {
+                "distance": 1199,
+                "impact": "MODIFIER",
+                "consequence_terms": [
+                    "downstream_gene_variant"
+                ],
+                "biotype": "nonsense_mediated_decay",
+                "gene_symbol": "CPSF3L",
+                "strand": -1,
+                "transcript_id": "ENST00000527098",
+                "variant_allele": "G",
+                "hgnc_id": 26052,
+                "gene_symbol_source": "HGNC",
+                "gene_id": "ENSG00000127054"
+            },
+            {
+                "variant_allele": "G",
+                "flags": [
+                    "cds_start_NF"
+                ],
+                "hgnc_id": 26052,
+                "gene_id": "ENSG00000127054",
+                "gene_symbol_source": "HGNC",
+                "gene_symbol": "CPSF3L",
+                "strand": -1,
+                "transcript_id": "ENST00000527383",
+                "impact": "MODIFIER",
+                "biotype": "nonsense_mediated_decay",
+                "consequence_terms": [
+                    "downstream_gene_variant"
+                ],
+                "distance": 2315
+            },
+            {
+                "distance": 4292,
+                "impact": "MODIFIER",
+                "biotype": "protein_coding",
+                "consequence_terms": [
+                    "downstream_gene_variant"
+                ],
+                "gene_symbol": "CPSF3L",
+                "transcript_id": "ENST00000527719",
+                "strand": -1,
+                "variant_allele": "G",
+                "flags": [
+                    "cds_end_NF"
+                ],
+                "hgnc_id": 26052,
+                "gene_id": "ENSG00000127054",
+                "gene_symbol_source": "HGNC"
+            },
+            {
+                "hgnc_id": 26052,
+                "variant_allele": "G",
+                "gene_id": "ENSG00000127054",
+                "gene_symbol_source": "HGNC",
+                "gene_symbol": "CPSF3L",
+                "strand": -1,
+                "transcript_id": "ENST00000528879",
+                "impact": "MODIFIER",
+                "biotype": "nonsense_mediated_decay",
+                "consequence_terms": [
+                    "downstream_gene_variant"
+                ],
+                "distance": 1660
+            },
+            {
+                "distance": 4294,
+                "impact": "MODIFIER",
+                "consequence_terms": [
+                    "downstream_gene_variant"
+                ],
+                "biotype": "protein_coding",
+                "gene_symbol": "CPSF3L",
+                "strand": -1,
+                "transcript_id": "ENST00000530031",
+                "variant_allele": "G",
+                "flags": [
+                    "cds_end_NF"
+                ],
+                "hgnc_id": 26052,
+                "gene_symbol_source": "HGNC",
+                "gene_id": "ENSG00000127054"
+            },
+            {
+                "consequence_terms": [
+                    "downstream_gene_variant"
+                ],
+                "biotype": "retained_intron",
+                "impact": "MODIFIER",
+                "distance": 3512,
+                "gene_symbol_source": "HGNC",
+                "gene_id": "ENSG00000127054",
+                "variant_allele": "G",
+                "hgnc_id": 26052,
+                "transcript_id": "ENST00000531020",
+                "strand": -1,
+                "gene_symbol": "CPSF3L"
+            },
+            {
+                "gene_id": "ENSG00000127054",
+                "gene_symbol_source": "HGNC",
+                "variant_allele": "G",
+                "hgnc_id": 26052,
+                "strand": -1,
+                "transcript_id": "ENST00000531292",
+                "gene_symbol": "CPSF3L",
+                "biotype": "retained_intron",
+                "consequence_terms": [
+                    "downstream_gene_variant"
+                ],
+                "impact": "MODIFIER",
+                "distance": 2435
+            },
+            {
+                "impact": "MODIFIER",
+                "biotype": "nonsense_mediated_decay",
+                "consequence_terms": [
+                    "downstream_gene_variant"
+                ],
+                "distance": 2163,
+                "variant_allele": "G",
+                "hgnc_id": 26052,
+                "flags": [
+                    "cds_start_NF"
+                ],
+                "gene_id": "ENSG00000127054",
+                "gene_symbol_source": "HGNC",
+                "gene_symbol": "CPSF3L",
+                "strand": -1,
+                "transcript_id": "ENST00000531377"
+            },
+            {
+                "transcript_id": "ENST00000532772",
+                "strand": -1,
+                "gene_symbol": "CPSF3L",
+                "gene_symbol_source": "HGNC",
+                "gene_id": "ENSG00000127054",
+                "hgnc_id": 26052,
+                "variant_allele": "G",
+                "distance": 1003,
+                "consequence_terms": [
+                    "downstream_gene_variant"
+                ],
+                "biotype": "nonsense_mediated_decay",
+                "impact": "MODIFIER"
+            },
+            {
+                "gene_symbol": "CPSF3L",
+                "transcript_id": "ENST00000533916",
+                "strand": -1,
+                "variant_allele": "G",
+                "hgnc_id": 26052,
+                "gene_symbol_source": "HGNC",
+                "gene_id": "ENSG00000127054",
+                "distance": 3689,
+                "impact": "MODIFIER",
+                "consequence_terms": [
+                    "downstream_gene_variant"
+                ],
+                "biotype": "retained_intron"
+            },
+            {
+                "impact": "MODIFIER",
+                "consequence_terms": [
+                    "downstream_gene_variant"
+                ],
+                "biotype": "protein_coding",
+                "distance": 982,
+                "hgnc_id": 26052,
+                "variant_allele": "G",
+                "gene_symbol_source": "HGNC",
+                "gene_id": "ENSG00000127054",
+                "gene_symbol": "CPSF3L",
+                "transcript_id": "ENST00000540437",
+                "strand": -1
+            },
+            {
+                "hgnc_id": 26052,
+                "variant_allele": "G",
+                "gene_symbol_source": "HGNC",
+                "gene_id": "ENSG00000127054",
+                "gene_symbol": "CPSF3L",
+                "transcript_id": "ENST00000545578",
+                "strand": -1,
+                "impact": "MODIFIER",
+                "consequence_terms": [
+                    "downstream_gene_variant"
+                ],
+                "biotype": "protein_coding",
+                "distance": 1199
+            }
+        ],
+        "colocated_variants": [
+            {
+                "end": 1246004,
+                "start": 1246004,
+                "allele_string": "A/G/T",
+                "strand": 1,
+                "id": "rs2296474",
+                "seq_region_name": "1",
+                "frequencies": {
+                    "G": {
+                        "gnomade_mid": 0.9417,
+                        "gnomadg_ami": 0.9539,
+                        "gnomade_nfe": 0.9726,
+                        "gnomadg_sas": 0.9149,
+                        "gnomadg": 0.9702,
+                        "eur": 0.9672,
+                        "gnomade_eas": 0.8955,
+                        "gnomade": 0.9666,
+                        "gnomade_sas": 0.9225,
+                        "gnomade_remaining": 0.963,
+                        "gnomadg_afr": 0.9879,
+                        "amr": 0.9813,
+                        "gnomadg_fin": 0.9233,
+                        "af": 0.9519,
+                        "gnomadg_remaining": 0.9669,
+                        "gnomadg_amr": 0.9803,
+                        "gnomadg_mid": 0.9456,
+                        "afr": 0.9803,
+                        "eas": 0.9127,
+                        "gnomadg_asj": 0.9787,
+                        "gnomade_amr": 0.9864,
+                        "gnomade_asj": 0.9833,
+                        "gnomade_afr": 0.9878,
+                        "gnomadg_eas": 0.9078,
+                        "sas": 0.9172,
+                        "gnomadg_nfe": 0.9731,
+                        "gnomade_fin": 0.9301
+                    }
+                }
+            }
+        ],
+        "regulatory_feature_consequences": [
+            {
+                "impact": "MODIFIER",
+                "variant_allele": "G",
+                "regulatory_feature_id": "ENSR00000000174",
+                "biotype": "promoter",
+                "consequence_terms": [
+                    "regulatory_region_variant"
+                ]
+            }
+        ],
+        "assembly_name": "GRCh37",
+        "input": "1:g.1246004A>G",
+        "strand": 1
+    },
+    {
+        "start": 1647983,
+        "allele_string": "TGGCTTACG/AGGCTTAT",
+        "id": "1:g.1647983_1647991TGGCTTACdelinsAGGCTTAT",
+        "minimised": 1,
+        "seq_region_name": "1",
+        "assembly_name": "GRCh37",
+        "transcript_consequences": [
+            {
+                "impact": "MODIFIER",
+                "consequence_terms": [
+                    "intron_variant"
+                ],
+                "biotype": "protein_coding",
+                "hgnc_id": 1730,
+                "variant_allele": "AGGCTTAT",
+                "gene_symbol_source": "HGNC",
+                "gene_id": "ENSG00000008128",
+                "gene_symbol": "CDK11A",
+                "strand": -1,
+                "transcript_id": "ENST00000356200"
+            },
+            {
+                "impact": "MODIFIER",
+                "biotype": "retained_intron",
+                "consequence_terms": [
+                    "intron_variant",
+                    "non_coding_transcript_variant"
+                ],
+                "gene_symbol": "CDK11A",
+                "transcript_id": "ENST00000356937",
+                "strand": -1,
+                "variant_allele": "AGGCTTAT",
+                "hgnc_id": 1730,
+                "gene_id": "ENSG00000008128",
+                "gene_symbol_source": "HGNC"
+            },
+            {
+                "gene_id": "ENSG00000008128",
+                "gene_symbol_source": "HGNC",
+                "variant_allele": "AGGCTTAT",
+                "hgnc_id": 1730,
+                "transcript_id": "ENST00000357760",
+                "strand": -1,
+                "gene_symbol": "CDK11A",
+                "biotype": "protein_coding",
+                "consequence_terms": [
+                    "intron_variant"
+                ],
+                "impact": "MODIFIER"
+            },
+            {
+                "impact": "MODIFIER",
+                "biotype": "protein_coding",
+                "consequence_terms": [
+                    "intron_variant"
+                ],
+                "gene_symbol": "CDK11A",
+                "transcript_id": "ENST00000358779",
+                "strand": -1,
+                "variant_allele": "AGGCTTAT",
+                "hgnc_id": 1730,
+                "gene_id": "ENSG00000008128",
+                "gene_symbol_source": "HGNC"
+            },
+            {
+                "gene_symbol": "CDK11A",
+                "strand": -1,
+                "transcript_id": "ENST00000378633",
+                "variant_allele": "AGGCTTAT",
+                "hgnc_id": 1730,
+                "gene_id": "ENSG00000008128",
+                "gene_symbol_source": "HGNC",
+                "impact": "MODIFIER",
+                "biotype": "protein_coding",
+                "consequence_terms": [
+                    "intron_variant"
+                ]
+            },
+            {
+                "consequence_terms": [
+                    "intron_variant"
+                ],
+                "biotype": "protein_coding",
+                "impact": "MODIFIER",
+                "gene_symbol_source": "HGNC",
+                "gene_id": "ENSG00000008128",
+                "variant_allele": "AGGCTTAT",
+                "hgnc_id": 1730,
+                "transcript_id": "ENST00000378635",
+                "strand": -1,
+                "gene_symbol": "CDK11A"
+            },
+            {
+                "consequence_terms": [
+                    "intron_variant"
+                ],
+                "biotype": "protein_coding",
+                "impact": "MODIFIER",
+                "gene_symbol_source": "HGNC",
+                "gene_id": "ENSG00000008128",
+                "variant_allele": "AGGCTTAT",
+                "hgnc_id": 1730,
+                "strand": -1,
+                "transcript_id": "ENST00000378638",
+                "gene_symbol": "CDK11A"
+            },
+            {
+                "gene_id": "ENSG00000008128",
+                "gene_symbol_source": "HGNC",
+                "variant_allele": "AGGCTTAT",
+                "hgnc_id": 1730,
+                "strand": -1,
+                "transcript_id": "ENST00000404249",
+                "gene_symbol": "CDK11A",
+                "biotype": "protein_coding",
+                "consequence_terms": [
+                    "intron_variant"
+                ],
+                "impact": "MODIFIER"
+            },
+            {
+                "hgnc_id": 1730,
+                "variant_allele": "AGGCTTAT",
+                "gene_symbol_source": "HGNC",
+                "gene_id": "ENSG00000008128",
+                "gene_symbol": "CDK11A",
+                "strand": -1,
+                "transcript_id": "ENST00000460465",
+                "impact": "MODIFIER",
+                "consequence_terms": [
+                    "intron_variant",
+                    "NMD_transcript_variant"
+                ],
+                "biotype": "nonsense_mediated_decay"
+            },
+            {
+                "impact": "MODIFIER",
+                "consequence_terms": [
+                    "intron_variant"
+                ],
+                "biotype": "protein_coding",
+                "variant_allele": "AGGCTTAT",
+                "hgnc_id": 1730,
+                "flags": [
+                    "cds_end_NF"
+                ],
+                "gene_symbol_source": "HGNC",
+                "gene_id": "ENSG00000008128",
+                "gene_symbol": "CDK11A",
+                "strand": -1,
+                "transcript_id": "ENST00000479362"
+            },
+            {
+                "impact": "MODIFIER",
+                "consequence_terms": [
+                    "downstream_gene_variant"
+                ],
+                "biotype": "retained_intron",
+                "distance": 2614,
+                "hgnc_id": 1730,
+                "variant_allele": "AGGCTTAT",
+                "gene_symbol_source": "HGNC",
+                "gene_id": "ENSG00000008128",
+                "gene_symbol": "CDK11A",
+                "strand": -1,
+                "transcript_id": "ENST00000498810"
+            },
+            {
+                "hgnc_id": 1730,
+                "variant_allele": "AGGCTTAT",
+                "gene_symbol_source": "HGNC",
+                "gene_id": "ENSG00000008128",
+                "gene_symbol": "CDK11A",
+                "strand": -1,
+                "transcript_id": "ENST00000509982",
+                "impact": "MODIFIER",
+                "consequence_terms": [
+                    "intron_variant",
+                    "NMD_transcript_variant"
+                ],
+                "biotype": "nonsense_mediated_decay"
+            }
+        ],
+        "most_severe_consequence": "intron_variant",
+        "end": 1647991,
+        "strand": 1,
+        "input": "1:g.1647983_1647991TGGCTTACdelinsAGGCTTAT"
+    }
+]

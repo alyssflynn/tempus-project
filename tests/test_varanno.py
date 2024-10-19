@@ -44,8 +44,10 @@ def test_VCFPRocessor_validate_input_file_succeeds_if_exists(mock_exists, tmp_pa
     processor.validate_input_file()
 
 
-@patch("varanno.vep.batch_vep_hgvs", vep_hgvs_response)
-def test_VCFPRocessor_process(tcf_path, tmp_path):
+@patch("varanno.record.batch_vep_hgvs")
+def test_VCFPRocessor_process(mock_batch_vep_hgvs, tcf_path, tmp_path, vep_hgvs_response):
+    mock_batch_vep_hgvs.return_value = vep_hgvs_response
+
     processor = VCFProcessor(tcf_path, tmp_path)
     processor.process()
 
