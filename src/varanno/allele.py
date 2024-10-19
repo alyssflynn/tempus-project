@@ -1,18 +1,18 @@
 import re
 
 
-ALLELE_STR = r"^([ATCG.-]+)(?:/([ATCG.+]+)){1,4}$"
+ALLELE_STR = r"^([ATCGN.-]+)(?:/([ATCGN.+]+)){1,4}$"
 
 
 VAR_TYPES = (
-    ("SNV_SUB", r"^([ATCG])/(?!\1)([ATCG])$"),
-    ("SNV_DEL", r"^([ATCG])/([.-])$"),
-    ("SNV_INS", r"^([.-])/([ATCG])$"),
-    ("MNV_SUB", r"^([ATCG]{2,})/(?!\1)([ATCG]{2,})$"),
-    ("MNV_DEL", r"^([ATCG]+)/([.-]+)$"),
-    ("MNV_INS", r"^([.-]+)/([ATCG]+)$"),
-    ("CNV_DUP", r"^([ATCG])/(\1)$"),
-    ("CNV_MUL", r"^([ATCG])(?:/(\1))+$"),
+    ("SNV_SUB", r"^([ATCGN])/(?!\1)([ATCGN])$"),
+    ("SNV_DEL", r"^([ATCGN])/([.-])$"),
+    ("SNV_INS", r"^([.-])/([ATCGN])$"),
+    ("MNV_SUB", r"^([ATCGN]{2,})/(?!\1)([ATCGN]{2,})$"),
+    ("MNV_DEL", r"^([ATCGN]+)/([.-]+)$"),
+    ("MNV_INS", r"^([.-]+)/([ATCGN]+)$"),
+    ("CNV_DUP", r"^([ATCGN])/(\1)$"),
+    ("CNV_MUL", r"^([ATCGN])(?:/(\1))+$"),
 )
 
 
@@ -56,9 +56,15 @@ def parse_genotype(gtstr: str):
     - 1/1 : the sample is homozygous alternate
 
     Source: https://gatk.broadinstitute.org/hc/en-us/articles/360035531692-VCF-Variant-Call-Format
+
+    NOTE: also added:
+    - 1/0 : the sample is homozygous alternate
+    Apparently it can be treated as equivalent to "1/0" according to this forum post:
+    https://www.echemi.com/community/how-is-the-gt-field-in-a-vcf-file-defined_mjart2205162439_772.html
     """
     return {
         "0/0": "homozygous_ref",
         "0/1": "heterozygous",
+        "1/0": "heterozygous",
         "1/1": "homozygous_alt",
     }.get(gtstr)
