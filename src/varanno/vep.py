@@ -82,7 +82,7 @@ def realign_hgvs_inputs_outputs(
             yield res
         else:
             log.warning(f"VEP API returned no data for HGVS: {hgvs}")
-            yield {"error": "no data returned"}
+            yield {"error": "No data returned"}
 
 
 def batch_vep_hgvs(
