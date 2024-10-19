@@ -7,7 +7,6 @@ from .fileio import write_metadata_json, write_logs
 from .record import VariantAnnotation
 from .vcf import Reader, Record
 
-
 __all__ = ["VCFProcessor", "Reader", "Record", "VariantAnnotation"]
 
 stdout_handler = logging.StreamHandler(stream=sys.stdout)
@@ -39,7 +38,7 @@ class VCFProcessor:
 
         # Ensure output dir exists, override if allowed
         os.makedirs(self.outdir, exist_ok=self.allow_overrides)
-        log.addHandler(logging.FileHandler(filename=self.log_file))
+        log.root.addHandler(logging.FileHandler(filename=self.log_file))
 
         log.info(f"Annotating VCF! {self.infile} -> {self.outdir}")
         self.reader = Reader(self.infile)
