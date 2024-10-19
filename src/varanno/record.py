@@ -86,7 +86,9 @@ def annotation_factory(record: Record, vep_data: dict | None = None):
     rec_gt = sample.get("GT")
     genotype = parse_genotype(rec_gt) if rec_gt else None
     if genotype is None:
-        log.warning(f"Failed to parse genotype for record (pos: {record.POS}, GT:{rec_gt}), setting to 'unknown'")
+        log.warning(
+            f"Failed to parse genotype for record (pos: {record.POS}, GT:{rec_gt}), setting to 'unknown'"
+        )
         genotype = "unknown"
 
     # Depth of sequence coverage at the site of variation.

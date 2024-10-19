@@ -15,12 +15,12 @@ def hgvs_string(chromosome: str, pos: str | int, ref: str, alt: str) -> HGVSStri
     """Builds variant string in HGVS notation."""
     if not all((chromosome, pos, ref, alt)):
         raise RuntimeError
-    
+
     # TODO: verify this is the correct format
-    if len(ref) > 1: # or len(alt) > 1:
+    if len(ref) > 1:
         posend = int(pos) + len(ref)
         return f"1:g.{pos}_{posend}{ref}delins{alt}"
-    
+
     return f"{chromosome}:g.{pos}{ref}>{alt}"
 
 
