@@ -1,3 +1,9 @@
-Annotating VCF! data/test_vcf_min.txt -> data/sample_output
-Generating record annotations -> data/sample_output/annotations.csv
-Writing metadata JSON -> data/sample_output/metadata.json
+Annotating VCF! data/test_vcf_min.txt -> annotation_results_min
+Generating record annotations -> annotation_results_min/annotations.csv
+Annotating records: Batch size 50
+Reading VCF file: data/test_vcf_min.txt
+Starting new HTTPS connection (1): grch37.rest.ensembl.org:443
+https://grch37.rest.ensembl.org:443 "POST /vep/human/hgvs HTTP/11" 200 84643
+VEP API returned no data for HGVS: 1:g.91859795_91859802TATGTGAdelinsCATGTGA,CATGTGG
+Failed to parse genotype for record (pos: 91859795, GT:1/2), setting to 'unknown'
+Writing metadata JSON -> annotation_results_min/metadata.json
