@@ -45,6 +45,9 @@ You can run varanno from the command line, specifying an input VCF file and outp
 
 `$ python -m varanno -f "{vcf_input_file}" -o "{output_directory}"`
 
+This syntax will also work:
+`$ varanno -f "{vcf_input_file}" -o "output_directory"`
+
 The script will create the `output_directory` if it doesn't already exist, and generates 3-4 files when processing the VCF file:
 1. `annotations.csv` contains the annotations for each variant in the VCF file.
 2. `metadata.json` contains a JSON of the VCF file headers.
