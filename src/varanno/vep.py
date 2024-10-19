@@ -54,26 +54,12 @@ def vep_api_hgvs_get(hgvs_string: HGVSString, species: str = "human") -> dict:
     return first_element(data)
 
 
-def hgvs_response_input_dict(hgvs_response: list[dict]) -> dict[str, dict]:
-    """Returns a dictionary of VEP hgvs responses keyed on the "input" param."""
-
-    def _gen_dict(responses):
-        for res in responses:
-            yield res.get("input"), res
-
-    return dict(_gen_dict(hgvs_response))
-
-
 def realign_hgvs_inputs_outputs(
     hgvs_response: list[dict], hgvs_strings: list[HGVSString]
 ):
-    """
-    Yields VEP hgvs API results in the order the "hgvs_notations" input list was provided,
-    mapping dummy error outputs to the keys which are missing outputs in the response.
-
-    This ensures API inputs and outputs are aligned/of the same length, and is necessary
-    because he VEP hgvs API bulk endpoint appears to ignore malformed inputs rather than
-    providing any explicit error messaging.
+    """Ensures API inputs and outputs are aligned (same length, same order).
+    Yields VEP hgvs API results ordered by the "hgvs_notations" input list,
+    emmitting dummy error outputs for the hgvs notations missing from the response.
     """
     results = {res.get("input"): res for res in hgvs_response}
     for hgvs in hgvs_strings:
@@ -92,6 +78,10 @@ def batch_vep_hgvs(
 
     Endpoint: `POST vep/:species/hgvs`
     ([VEP API docs](https://grch37.rest.ensembl.org/documentation/info/vep_hgvs_post))
+
+    NOTE: The VEP hgvs API bulk endpoint output is not guaranteed to return the same
+    number of outputs as inputs. It appears to filter out queries it can't process
+    rather than providing any explicit error messaging.
     """
     url = f"{VEP_API_BASE_URL_GRCh37}/vep/{species}/hgvs"
     headers = {"Content-Type": "application/json", "Accept": "application/json"}
@@ -101,15 +91,7 @@ def batch_vep_hgvs(
     if not res.ok:
         res.raise_for_status()
 
-    results = res.json()
-
-    # NOTE: The VEP hgvs API bulk endpoint ignores inputs it doesn't like rather
-    # than including errors, so the inputs and outputs may not be the same length.
-    # In these cases we need to realign them and handle the missing data.
-    if len(hgvs_strings) != len(results):
-        results = list(realign_hgvs_inputs_outputs(results, hgvs_strings))
-
-    return results
+    return res.json()
 
 
 def find_vep_gene_id(data: dict) -> str | None:
